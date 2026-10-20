@@ -1,0 +1,314 @@
+{
+  "_note": "Treatment categories (URL /treatments/<slug>). The clinic has NOT yet confirmed its list of services: every category is 'placeholder' and is shown with a Draft badge on staging (PENDING_ITEMS.md). Root canals and wisdom tooth removal are mentioned in the clinic's Google reviews; the rest is a typical general-practice list for an MDS-led clinic, to be confirmed or trimmed by Dr. Ramakanth. 'confirmSpecialist: true' = may involve a visiting specialist (to be confirmed); the first consultation is always with Dr. Ramakanth. Visit counts are typical ranges and always say 'usually'. Prices are never published. 'size' controls the tile size on /treatments (lg | md | sm).",
+  "priceNote": "Fees depend on what the examination shows, so Dr. Ramakanth explains the plan and its cost before any treatment begins.",
+  "categories": [
+    {
+      "slug": "general-dentistry",
+      "status": "placeholder",
+      "title": "Check-ups, Cleaning & Fillings",
+      "shortTitle": "Check-ups & fillings",
+      "icon": "stethoscope",
+      "size": "lg",
+      "image": "treat-general",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Routine examinations, scaling and polishing, and tooth-coloured fillings for small cavities.",
+      "intro": [
+        "Most dental problems start quietly. A regular examination catches a small cavity or early gum inflammation while it is still simple to treat — usually with a filling or a professional clean rather than anything more involved.",
+        "At Sri Parvathi Dental Clinic a check-up means a careful look at every tooth, your gums, bite and the soft tissues of the mouth, followed by a plain-language explanation of what Dr. Ramakanth found and what, if anything, needs doing."
+      ],
+      "steps": [
+        { "title": "Tell us how things feel", "text": "Any pain, sensitivity or bleeding, plus your medical history and the medicines you take." },
+        { "title": "Examination", "text": "Teeth, gums, bite and mouth are checked; an X-ray is suggested only if it would change the plan." },
+        { "title": "Clear advice", "text": "You hear what is healthy, what needs watching and what needs treatment — and the cost before anything starts." }
+      ],
+      "subTreatments": [
+        { "slug": "dental-check-up", "title": "Dental check-up and consultation", "summary": "A full examination of teeth and gums with an explained treatment plan.", "visits": "Usually 1 visit" },
+        { "slug": "scaling-polishing", "title": "Scaling and polishing", "summary": "Removes hardened deposits (tartar) and surface stains that brushing cannot shift.", "visits": "Usually 1 visit" },
+        { "slug": "tooth-coloured-fillings", "title": "Tooth-coloured fillings", "summary": "Repairs a decayed or chipped tooth with a filling shaded to blend in.", "visits": "Usually 1 visit" },
+        { "slug": "sensitivity-care", "title": "Sensitivity care", "summary": "Finds why a tooth twinges with cold, hot or sweet food and treats the cause.", "visits": "Usually 1–2 visits" }
+      ],
+      "faqs": [
+        { "q": "How often should I have a dental check-up?", "a": "Many people are advised to come every six months, but the right gap depends on your gums and how prone you are to cavities. Dr. Ramakanth will suggest an interval that suits you." },
+        { "q": "Does scaling damage the enamel?", "a": "No. Scaling removes tartar sitting on the tooth surface; it does not remove enamel. Teeth can feel slightly sensitive for a day or two afterwards while the gums settle." },
+        { "q": "Are tooth-coloured fillings strong enough for back teeth?", "a": "For small and medium cavities they usually are. If a cavity is very large, a crown may protect the tooth better — you will be told which applies to you." }
+      ],
+      "seo": { "title": "Dental Check-ups & Fillings in Tadepalli", "description": "Dental check-ups, scaling and tooth-coloured fillings at Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle — with Dr. Ramakanth, MDS." }
+    },
+    {
+      "slug": "root-canal-treatment",
+      "status": "placeholder",
+      "title": "Root Canal Treatment",
+      "shortTitle": "Root canals",
+      "icon": "activity",
+      "size": "md",
+      "image": "treat-root-canal",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Saves a badly decayed or infected tooth by cleaning and sealing the canals inside it.",
+      "intro": [
+        "When decay or a crack reaches the soft pulp inside a tooth, the pulp can become inflamed or infected. That is often what lies behind a throbbing toothache, pain that wakes you at night, or a swelling near one tooth.",
+        "Root canal treatment removes the affected pulp, disinfects the narrow canals and seals them, so the tooth can stay in your mouth. It is done under local anaesthetic, and most patients say it feels much like having a filling."
+      ],
+      "steps": [
+        { "title": "Diagnosis", "text": "Examination and an X-ray show whether the pulp is involved and how many canals the tooth has." },
+        { "title": "Cleaning and shaping", "text": "Under local anaesthetic the canals are cleaned, shaped and disinfected." },
+        { "title": "Sealing and protection", "text": "The canals are sealed; back teeth usually then need a crown to protect them from breaking." }
+      ],
+      "subTreatments": [
+        { "slug": "single-visit-rct", "title": "Root canal treatment", "summary": "Cleaning, disinfecting and sealing the canals of a tooth with an infected or inflamed pulp.", "visits": "Usually 1–3 visits" },
+        { "slug": "root-canal-retreatment", "title": "Root canal re-treatment", "summary": "Re-cleans a previously treated tooth that is painful or infected again.", "visits": "Usually 2–3 visits" },
+        { "slug": "post-rct-crown", "title": "Crown after root canal", "summary": "A cap that protects a root-treated back tooth from cracking under chewing forces.", "visits": "Usually 2 visits" }
+      ],
+      "faqs": [
+        { "q": "Is a root canal painful?", "a": "The tooth is numbed first, so the treatment itself should feel similar to a filling. Some tenderness for a few days afterwards is common and is usually managed with simple painkillers." },
+        { "q": "Can I just have the tooth removed instead?", "a": "Sometimes, yes — but losing a tooth can lead to neighbouring teeth drifting and chewing on one side. Dr. Ramakanth will explain the pros and cons of saving versus removing your particular tooth." },
+        { "q": "Why do I need a crown after a root canal?", "a": "A root-treated back tooth is often weakened by the original decay. A crown holds it together and greatly reduces the risk of it splitting later." }
+      ],
+      "seo": { "title": "Root Canal Treatment in Tadepalli", "description": "Root canal treatment to save painful or infected teeth at Sri Parvathi Dental Clinic, Tadepalle, by Dr. Ramakanth, MDS. Near Vijayawada and Guntur." }
+    },
+    {
+      "slug": "tooth-extraction",
+      "status": "placeholder",
+      "title": "Tooth Removal & Wisdom Teeth",
+      "shortTitle": "Extractions & wisdom teeth",
+      "icon": "scissors",
+      "size": "md",
+      "image": "treat-extraction",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Gentle removal of teeth that cannot be saved, including impacted or troublesome wisdom teeth.",
+      "intro": [
+        "Removing a tooth is always the last option, but sometimes it is the right one: a tooth broken below the gum, very loose with advanced gum disease, or a wisdom tooth that keeps getting infected.",
+        "Wisdom teeth are the last molars to come through, often in the late teens or twenties. When there is not enough room they can grow at an angle and trap food and bacteria, causing repeated pain and swelling at the back of the jaw."
+      ],
+      "steps": [
+        { "title": "Assessment", "text": "An examination and X-ray show the tooth's position, roots and nearby nerves." },
+        { "title": "Comfortable removal", "text": "The area is numbed completely before the tooth is removed as gently as possible." },
+        { "title": "Aftercare", "text": "You go home with written aftercare advice and a review visit if one is needed." }
+      ],
+      "subTreatments": [
+        { "slug": "simple-extraction", "title": "Simple tooth removal", "summary": "Removal of a visible tooth that cannot be restored.", "visits": "Usually 1 visit" },
+        { "slug": "wisdom-tooth-removal", "title": "Wisdom tooth removal", "summary": "Removal of an erupted or partly erupted wisdom tooth that keeps causing trouble.", "visits": "Usually 1 visit + review" },
+        { "slug": "surgical-extraction", "title": "Surgical extraction", "summary": "For impacted teeth or roots below the gum, removed through a small opening in the gum.", "visits": "Usually 1 visit + review", "doctors": ["ramakanth"] }
+      ],
+      "faqs": [
+        { "q": "Does every wisdom tooth need to come out?", "a": "No. Wisdom teeth that are healthy, fully through and easy to clean can often stay. Removal is usually suggested when they cause repeated infection, decay or damage to the tooth in front." },
+        { "q": "How long does healing take after an extraction?", "a": "The gum usually feels much better within a week. Bone underneath keeps remodelling for a few months, which is normal." },
+        { "q": "Can I eat after a tooth is removed?", "a": "Yes, once the numbness wears off — choose soft, lukewarm food and chew on the other side for the first day or two." }
+      ],
+      "seo": { "title": "Wisdom Tooth Removal in Tadepalli", "description": "Tooth extraction and wisdom tooth removal at Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle. Gentle care with Dr. Ramakanth, MDS." }
+    },
+    {
+      "slug": "gum-treatment",
+      "status": "placeholder",
+      "title": "Gum Treatment",
+      "shortTitle": "Gum care",
+      "icon": "droplet",
+      "size": "sm",
+      "image": "treat-gums",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Care for bleeding, swollen or receding gums, from deep cleaning to ongoing maintenance.",
+      "intro": [
+        "Gums that bleed when you brush are not normal — it is usually the first sign of gum inflammation (gingivitis). Caught early, it often settles with a professional clean and better brushing at home.",
+        "Left alone, inflammation can spread below the gum line and loosen the support around teeth (periodontitis). Treatment then aims to clean the pockets under the gum and keep the condition stable over time."
+      ],
+      "steps": [
+        { "title": "Gum check", "text": "Gum pockets are measured and any bleeding, recession or looseness noted." },
+        { "title": "Deep cleaning", "text": "Tartar and bacteria are removed from above and below the gum line, numbing the area if needed." },
+        { "title": "Maintenance", "text": "Regular reviews keep the gums stable; you get a home-care routine that suits you." }
+      ],
+      "subTreatments": [
+        { "slug": "deep-cleaning", "title": "Deep cleaning (scaling and root planing)", "summary": "Cleans the root surfaces below the gum line to help inflamed gums heal.", "visits": "Usually 1–2 visits" },
+        { "slug": "gum-maintenance", "title": "Gum maintenance visits", "summary": "Regular professional cleaning to keep treated gums stable.", "visits": "Every 3–6 months, as advised" }
+      ],
+      "faqs": [
+        { "q": "Why do my gums bleed when I brush?", "a": "Usually because plaque along the gum line has made them inflamed. Keep brushing gently — stopping makes it worse — and book a check-up so the cause can be treated." },
+        { "q": "Can gum disease be cured?", "a": "Early gum inflammation can usually be reversed. More advanced gum disease can typically be controlled and kept stable with treatment and regular maintenance." }
+      ],
+      "seo": { "title": "Bleeding Gums Treatment in Tadepalli", "description": "Treatment for bleeding, swollen or receding gums at Sri Parvathi Dental Clinic, Tadepalle: gum checks, deep cleaning and maintenance." }
+    },
+    {
+      "slug": "crowns-bridges",
+      "status": "placeholder",
+      "title": "Crowns & Bridges",
+      "shortTitle": "Crowns & bridges",
+      "icon": "award",
+      "size": "sm",
+      "image": "treat-crowns",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Caps that rebuild weak or broken teeth, and fixed bridges that replace a missing tooth.",
+      "intro": [
+        "A crown is a cap that covers a tooth weakened by a large filling, a crack or root canal treatment, restoring its shape and strength so you can chew with confidence.",
+        "A bridge replaces one missing tooth by anchoring a false tooth to crowns on the teeth either side. It is fixed in place — you do not take it out."
+      ],
+      "steps": [
+        { "title": "Plan", "text": "The tooth is checked and the right material is discussed with you." },
+        { "title": "Prepare and measure", "text": "The tooth is shaped, an impression or scan is taken and a temporary cap fitted." },
+        { "title": "Fit", "text": "The final crown or bridge is checked for bite and colour, then cemented." }
+      ],
+      "subTreatments": [
+        { "slug": "dental-crowns", "title": "Dental crowns", "summary": "Metal-ceramic or all-ceramic caps for weak, broken or root-treated teeth.", "visits": "Usually 2 visits" },
+        { "slug": "dental-bridges", "title": "Dental bridges", "summary": "A fixed replacement for one missing tooth, supported by the neighbouring teeth.", "visits": "Usually 2–3 visits" }
+      ],
+      "faqs": [
+        { "q": "How long does a crown last?", "a": "With good brushing, flossing and regular check-ups, many crowns last for years. Grinding your teeth or biting very hard objects can shorten that." },
+        { "q": "Bridge or implant — which is better?", "a": "It depends on the health of the neighbouring teeth, the bone and your preferences. Dr. Ramakanth will compare both options for your situation." }
+      ],
+      "seo": { "title": "Dental Crowns & Bridges in Tadepalli", "description": "Dental crowns and bridges to rebuild weak teeth or replace a missing tooth, at Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle." }
+    },
+    {
+      "slug": "dental-implants",
+      "status": "placeholder",
+      "title": "Dental Implants",
+      "shortTitle": "Implants",
+      "icon": "anchor",
+      "size": "md",
+      "image": "treat-implants",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": true,
+      "short": "A fixed, long-term way to replace missing teeth with an artificial root and crown.",
+      "intro": [
+        "A dental implant is a small titanium post placed in the jaw where a tooth is missing. Once it has bonded with the bone, a crown is attached on top, giving a fixed tooth that does not rely on the neighbouring teeth.",
+        "Not everyone is suitable straight away: the amount of bone, gum health and general health all matter. Your first consultation is with Dr. Ramakanth, who checks suitability and explains every step and its cost."
+      ],
+      "steps": [
+        { "title": "Suitability check", "text": "Examination and X-rays assess the bone, gums and general health." },
+        { "title": "Implant placement", "text": "The implant is placed under local anaesthetic and left to heal." },
+        { "title": "Crown", "text": "After healing, a crown is fitted on the implant." }
+      ],
+      "subTreatments": [
+        { "slug": "implant-consultation", "title": "Implant consultation", "summary": "Finds out whether an implant suits you and what the plan would involve.", "visits": "Usually 1 visit" },
+        { "slug": "single-tooth-implant", "title": "Single-tooth implant", "summary": "Replaces one missing tooth with an implant and crown.", "visits": "Usually several visits over a few months" }
+      ],
+      "faqs": [
+        { "q": "How long does the implant process take?", "a": "Often a few months from placement to the final crown, because the bone needs time to bond with the implant. Your own timeline is explained at the consultation." },
+        { "q": "Am I too old for an implant?", "a": "Age alone is rarely the issue; bone, gum health and conditions such as uncontrolled diabetes matter more. A consultation is the way to find out." }
+      ],
+      "seo": { "title": "Dental Implants in Tadepalli", "description": "Dental implant consultations at Sri Parvathi Dental Clinic, Tadepalle — with Dr. Ramakanth, MDS. Fixed replacement for missing teeth near Vijayawada." }
+    },
+    {
+      "slug": "dentures",
+      "status": "placeholder",
+      "title": "Dentures",
+      "shortTitle": "Dentures",
+      "icon": "layers",
+      "size": "sm",
+      "image": "treat-dentures",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Removable partial and complete dentures to restore chewing, speech and your smile.",
+      "intro": [
+        "Dentures replace several or all missing teeth with a removable appliance. A well-fitting denture helps with chewing and speech and supports the cheeks and lips.",
+        "Getting the fit right takes a few appointments — measurements, a try-in and adjustments — so the final denture feels as natural and comfortable as possible."
+      ],
+      "steps": [
+        { "title": "Impressions", "text": "Accurate moulds of your mouth are taken." },
+        { "title": "Try-in", "text": "A wax version lets you check the look and bite before the final denture is made." },
+        { "title": "Fit and adjust", "text": "The denture is fitted and fine-tuned at follow-up visits." }
+      ],
+      "subTreatments": [
+        { "slug": "complete-dentures", "title": "Complete dentures", "summary": "A full set of teeth for an upper or lower jaw with no natural teeth.", "visits": "Usually 4–5 visits" },
+        { "slug": "partial-dentures", "title": "Partial dentures", "summary": "Fills gaps between remaining natural teeth with a removable plate.", "visits": "Usually 3–4 visits" }
+      ],
+      "faqs": [
+        { "q": "Will new dentures feel strange?", "a": "For the first few weeks, yes — that is normal. Speech and chewing improve with practice, and small adjustments relieve sore spots." },
+        { "q": "Should I wear dentures at night?", "a": "Most people are advised to take them out at night so the gums can rest, and to keep them clean and moist." }
+      ],
+      "seo": { "title": "Dentures in Tadepalli", "description": "Complete and partial dentures made to fit at Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle, with adjustments until they feel right." }
+    },
+    {
+      "slug": "braces-aligners",
+      "status": "placeholder",
+      "title": "Braces & Clear Aligners",
+      "shortTitle": "Braces & aligners",
+      "icon": "align-center",
+      "size": "sm",
+      "image": "treat-braces",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": true,
+      "short": "Straightening for crooked, crowded or gapped teeth, for teenagers and adults.",
+      "intro": [
+        "Straighter teeth are easier to clean and can improve how your bite works, not just how your smile looks. Braces and clear aligners both move teeth gradually with gentle, steady pressure.",
+        "Your first consultation is with Dr. Ramakanth, who assesses your bite and explains which approach suits you; complex cases may involve an orthodontist (to be confirmed)."
+      ],
+      "steps": [
+        { "title": "Assessment", "text": "Teeth, bite and jaw are examined; records are taken if treatment is planned." },
+        { "title": "Treatment", "text": "Braces are fitted or aligners issued, with regular review visits." },
+        { "title": "Retention", "text": "Retainers keep teeth in their new position afterwards." }
+      ],
+      "subTreatments": [
+        { "slug": "metal-ceramic-braces", "title": "Metal and ceramic braces", "summary": "Fixed brackets and wires; ceramic brackets are tooth-coloured.", "visits": "Regular reviews over 12–24 months (typical)" },
+        { "slug": "clear-aligners", "title": "Clear aligners", "summary": "A series of near-invisible removable trays for suitable cases.", "visits": "Regular reviews; length depends on the case" }
+      ],
+      "faqs": [
+        { "q": "Am I too old for braces?", "a": "Adults can have orthodontic treatment too, as long as the teeth and gums are healthy." },
+        { "q": "Are aligners as good as braces?", "a": "For many mild to moderate cases they work well; some movements are still better with fixed braces. The consultation tells you which fits your case." }
+      ],
+      "seo": { "title": "Braces & Clear Aligners in Tadepalli", "description": "Braces and clear aligner consultations at Sri Parvathi Dental Clinic, Tadepalle, for crooked, crowded or gapped teeth in teens and adults." }
+    },
+    {
+      "slug": "kids-dentistry",
+      "status": "placeholder",
+      "title": "Children's Dentistry",
+      "shortTitle": "Kids' dentistry",
+      "icon": "smile",
+      "size": "md",
+      "image": "treat-kids",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Friendly first visits, cavity prevention and treatment for milk and permanent teeth.",
+      "intro": [
+        "A good first experience at the dentist shapes how a child feels about dental care for years. Early visits are kept short, friendly and focused on getting comfortable.",
+        "Milk teeth matter: they hold space for the permanent teeth and help children eat and speak. Small cavities in milk teeth can be filled before they cause pain."
+      ],
+      "steps": [
+        { "title": "Get comfortable", "text": "The child meets the dentist and sees the chair and tools first." },
+        { "title": "Gentle check", "text": "Teeth are counted and checked for early cavities." },
+        { "title": "Prevention plan", "text": "Parents get brushing, diet and fluoride advice tailored to the child." }
+      ],
+      "subTreatments": [
+        { "slug": "first-visit", "title": "First dental visit", "summary": "A relaxed introduction and check for young children.", "visits": "Usually 1 visit" },
+        { "slug": "fluoride-sealants", "title": "Fluoride and fissure sealants", "summary": "Protective coatings that help prevent cavities in children's teeth.", "visits": "Usually 1 visit" },
+        { "slug": "kids-fillings", "title": "Fillings for children", "summary": "Treats cavities in milk or new permanent teeth.", "visits": "Usually 1 visit" }
+      ],
+      "faqs": [
+        { "q": "When should my child first see a dentist?", "a": "Many dentists suggest a first visit once the first teeth appear, or by about the first birthday." },
+        { "q": "Do cavities in milk teeth need treatment?", "a": "Often yes, because they can cause pain and infection and affect the permanent teeth growing underneath." }
+      ],
+      "seo": { "title": "Children's Dentist in Tadepalli", "description": "Gentle children's dentistry at Sri Parvathi Dental Clinic, Tadepalle: first visits, fluoride, sealants and fillings for milk and permanent teeth." }
+    },
+    {
+      "slug": "cosmetic-dentistry",
+      "status": "placeholder",
+      "title": "Teeth Whitening & Smile Care",
+      "shortTitle": "Whitening & smile care",
+      "icon": "sparkles",
+      "size": "sm",
+      "image": "treat-cosmetic",
+      "doctors": ["ramakanth"],
+      "confirmSpecialist": false,
+      "short": "Professional whitening and small cosmetic touches to brighten and even out your smile.",
+      "intro": [
+        "Tea, coffee, tobacco and age all darken teeth over time. Professional whitening, done after a check-up, lightens natural tooth colour safely.",
+        "Chipped edges, small gaps or uneven shapes can often be improved with tooth-coloured bonding, without drilling healthy tooth away."
+      ],
+      "steps": [
+        { "title": "Check-up first", "text": "Cavities and gum problems are treated before any cosmetic work." },
+        { "title": "Shade and plan", "text": "Your current shade is recorded and realistic results are discussed." },
+        { "title": "Treatment", "text": "Whitening or bonding is carried out, with aftercare advice." }
+      ],
+      "subTreatments": [
+        { "slug": "teeth-whitening", "title": "Professional teeth whitening", "summary": "Lightens natural tooth colour under dental supervision.", "visits": "Usually 1–2 visits" },
+        { "slug": "cosmetic-bonding", "title": "Cosmetic bonding", "summary": "Tooth-coloured material to repair chips and close small gaps.", "visits": "Usually 1 visit" }
+      ],
+      "faqs": [
+        { "q": "Does whitening harm the teeth?", "a": "Supervised whitening is considered safe for most people. Temporary sensitivity is common and usually settles within a few days." },
+        { "q": "Will crowns and fillings whiten too?", "a": "No — whitening only affects natural teeth, so visible fillings or crowns may need replacing afterwards to match." }
+      ],
+      "seo": { "title": "Teeth Whitening in Tadepalli", "description": "Professional teeth whitening and cosmetic bonding at Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle, after a full dental check-up." }
+    }
+  ]
+}

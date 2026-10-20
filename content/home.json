@@ -1,0 +1,80 @@
+{
+  "status": "placeholder",
+  "hero": {
+    "badge": "Dentist in Tadepalli · Pathur Road Cross",
+    "titleLine1": "Dental care that",
+    "titleLine2": "puts you at ease.",
+    "lead": "Sri Parvathi Dental Clinic is led by Dr. Ramakanth, MDS. Check-ups, root canals, wisdom teeth and smile care, explained before anything begins — open every day of the week.",
+    "image": "hero-family",
+    "primaryCta": "Book an appointment",
+    "secondaryCta": { "label": "See treatments", "href": "/treatments" },
+    "checks": ["MDS-qualified dentist", "Open 7 days", "Costs explained upfront"],
+    "chips": [
+      { "icon": "clock", "text": "{{hoursShort}}", "kind": "hours" },
+      { "icon": "badge-check", "text": "Dr. Ramakanth", "sub": "MDS, Lead Dentist", "kind": "static" },
+      { "icon": "calendar-check", "text": "Book online, 24/7", "sub": "Takes about a minute", "kind": "static" }
+    ]
+  },
+  "stats": {
+    "_note": "Only verifiable facts. The Google rating comes from clinic.json → google (dated); the rest is derived from the qualification and hours. Never add patient counts or years without the clinic's word.",
+    "status": "approved",
+    "items": [
+      { "value": "{{googleRating}}★", "label": "Google rating", "sub": "{{googleReviews}} reviews · checked {{googleChecked}}", "icon": "award", "source": "clinic.json google" },
+      { "value": "MDS", "label": "Qualified dentist", "sub": "Master of Dental Surgery", "icon": "badge-check", "source": "doctors.json qualification (account owner)" },
+      { "value": "7 days", "label": "Open every week", "sub": "Sunday mornings too", "icon": "calendar", "source": "clinic.json hours" },
+      { "value": "9:30 PM", "label": "Late evenings", "sub": "Monday to Saturday", "icon": "clock", "source": "clinic.json hours" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Welcome",
+    "title": "A calm, unhurried dental visit — right at Pathur Road Cross",
+    "paragraphs": [
+      "Climb one flight of stairs at Perreddy Complex, near Reliance Digital, and you'll find Sri Parvathi Dental Clinic. It's a neighbourhood practice where Dr. Ramakanth sees every patient himself.",
+      "We believe a good dental visit starts with listening. You'll hear what we see, what your choices are and what each one costs — before a single instrument is picked up."
+    ],
+    "points": ["Every consultation with Dr. Ramakanth, MDS", "Sterilised instruments for every patient", "Clear treatment plans and costs upfront"],
+    "image": "space-modern-clinic",
+    "badgeValue": "{{googleRating}}★",
+    "badgeLabel": "on Google",
+    "cta": { "label": "About the clinic", "href": "/about" }
+  },
+  "treatments": { "eyebrow": "Treatments", "title": "Everything from a check-up to a new smile", "lead": "{{categoryCount}} areas of care under one roof. Tap a treatment to see what it involves and how many visits it usually takes." },
+  "symptoms": { "eyebrow": "How can we help?", "title": "Tell us what's bothering you", "lead": "Pick what fits best — we'll take you straight to booking with the right reason filled in." },
+  "doctors": { "eyebrow": "Your dentist", "title": "Meet Dr. Ramakanth", "lead": "" },
+  "why": {
+    "eyebrow": "Why patients choose us",
+    "title": "Small clinic. Careful hands. Straight answers.",
+    "points": [
+      { "icon": "hand-heart", "title": "Patience first", "text": "Patience comes up again and again in our Google reviews. Nervous patients and children are given the time they need." },
+      { "icon": "shield-check", "title": "Strict sterilisation", "text": "Instruments are cleaned and sterilised between patients, and single-use items are never reused." },
+      { "icon": "indian-rupee", "title": "No surprise bills", "text": "You'll know the treatment plan and its cost before we start, so you can decide without pressure." },
+      { "icon": "calendar-clock", "title": "Hours that fit your day", "text": "Open {{hoursSummary}} — easy to visit before or after work." },
+      { "icon": "map-pin", "title": "Easy to find", "text": "First floor of Perreddy Complex at Pathur Road Cross, near Reliance Digital, Tadepalle." },
+      { "icon": "message-circle", "title": "Reminders that reach you", "text": "Your booking confirmation and reminder arrive automatically, so you won't miss a visit." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "How it works",
+    "title": "From booking to a healthy smile",
+    "items": [
+      { "icon": "calendar-check", "title": "Book in a minute", "text": "Choose your reason and a free time online, or call the clinic." },
+      { "icon": "message-circle", "title": "Get confirmed", "text": "A confirmation and a reminder before your visit arrive automatically." },
+      { "icon": "stethoscope", "title": "Talk it through", "text": "Dr. Ramakanth examines, explains what he finds and gives you options." },
+      { "icon": "smile", "title": "Treatment & follow-up", "text": "Treatment at a pace that suits you, with written aftercare and digital prescriptions." }
+    ]
+  },
+  "booking": {
+    "stepsTitle": "Booking takes three steps",
+    "steps": [
+      { "title": "Reason", "text": "What brings you in" },
+      { "title": "Time", "text": "A free slot that suits you" },
+      { "title": "Confirm", "text": "Your details and a mobile code" }
+    ]
+  },
+  "gallery": { "eyebrow": "The clinic", "title": "A bright, welcoming space", "lead": "Representative photos for now — our own pictures are on their way." },
+  "education": { "eyebrow": "Patient education", "title": "Good to know before your visit", "lead": "Plain-language answers to questions we hear every week." },
+  "faq": { "eyebrow": "FAQs", "title": "Quick answers" },
+  "visit": { "eyebrow": "Visit us", "title": "Timings & directions", "lead": "First Floor, Perreddy Complex, Pathur Road Cross — near Reliance Digital." },
+  "cta": { "title": "Ready when you are.", "lead": "Book a check-up or tell us what's bothering you. We'll take it from there.", "button": "Book an appointment" },
+  "beforeAfter": { "_note": "Only real, consented patient photos — none yet.", "status": "placeholder", "items": [] }
+}

@@ -1,0 +1,165 @@
+{
+  "base": "http://localhost:3300",
+  "date": "2026-10-20T13:47:13.211Z",
+  "rows": [
+    {
+      "form": "mobile",
+      "path": "/",
+      "performance": 94,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "3.0 s",
+      "cls": "0",
+      "tbt": "0 ms",
+      "failing": [
+        "largest-contentful-paint (3.0 s)"
+      ]
+    },
+    {
+      "form": "mobile",
+      "path": "/treatments/gum-treatment",
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "2.8 s",
+      "cls": "0",
+      "tbt": "10 ms",
+      "failing": [
+        "largest-contentful-paint (2.8 s)"
+      ]
+    },
+    {
+      "form": "mobile",
+      "path": "/doctors/dr-ramakanth",
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "2.7 s",
+      "cls": "0.037",
+      "tbt": "60 ms",
+      "failing": [
+        "largest-contentful-paint (2.7 s)"
+      ]
+    },
+    {
+      "form": "mobile",
+      "path": "/gallery",
+      "performance": 92,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "3.3 s",
+      "cls": "0",
+      "tbt": "10 ms",
+      "failing": [
+        "largest-contentful-paint (3.3 s)"
+      ]
+    },
+    {
+      "form": "mobile",
+      "path": "/contact",
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "2.5 s",
+      "cls": "0",
+      "tbt": "10 ms",
+      "failing": [
+        "largest-contentful-paint (2.5 s)"
+      ]
+    },
+    {
+      "form": "mobile",
+      "path": "/book",
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 96,
+      "seo": 100,
+      "lcp": "3.2 s",
+      "cls": "0.089",
+      "tbt": "10 ms",
+      "failing": [
+        "largest-contentful-paint (3.2 s)",
+        "errors-in-console"
+      ]
+    },
+    {
+      "form": "desktop",
+      "path": "/",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "0.6 s",
+      "cls": "0.003",
+      "tbt": "0 ms",
+      "failing": []
+    },
+    {
+      "form": "desktop",
+      "path": "/treatments/gum-treatment",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "0.6 s",
+      "cls": "0.003",
+      "tbt": "0 ms",
+      "failing": []
+    },
+    {
+      "form": "desktop",
+      "path": "/doctors/dr-ramakanth",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "0.6 s",
+      "cls": "0.001",
+      "tbt": "0 ms",
+      "failing": []
+    },
+    {
+      "form": "desktop",
+      "path": "/gallery",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "0.8 s",
+      "cls": "0.003",
+      "tbt": "0 ms",
+      "failing": []
+    },
+    {
+      "form": "desktop",
+      "path": "/contact",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": "0.5 s",
+      "cls": "0.003",
+      "tbt": "0 ms",
+      "failing": []
+    },
+    {
+      "form": "desktop",
+      "path": "/book",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 96,
+      "seo": 100,
+      "lcp": "0.7 s",
+      "cls": "0.005",
+      "tbt": "0 ms",
+      "failing": [
+        "errors-in-console"
+      ]
+    }
+  ]
+}

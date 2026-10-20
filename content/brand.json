@@ -1,0 +1,40 @@
+{
+  "status": "placeholder",
+  "_note": "SPDC palette (20 Oct 2026): deep teal + fresh mint on clinical white, warm gold for calls to action, navy for text and the footer. Chosen to be clearly different from the other ClinicFlow247 sites in Tadepalli (blue/green). Gold is a BACKGROUND colour only: text on gold is always ctaInk (navy). Mint is decoration/tint only on light backgrounds; as text it is used only on navy (mintOnDark). Colours become CSS variables (src/lib/theme.ts) that feed the Tailwind theme and the ClinicFlow white-label theme tokens (npm run tenant). Run `npm run contrast` after any change. Status stays placeholder until the clinic supplies a logo whose colours may refine these.",
+  "colors": {
+    "primary": "#0E7C86",
+    "primaryHover": "#0B6870",
+    "primaryDeep": "#08525A",
+    "navy": "#0B2545",
+    "navySoft": "#13315C",
+    "tint": "#EFF8F8",
+    "mint": "#9FE2C8",
+    "mintSoft": "#ECF8F3",
+    "cta": "#E9B44C",
+    "ctaHover": "#DDA235",
+    "ctaInk": "#0B2545",
+    "background": "#F7FBFC",
+    "surface": "#FFFFFF",
+    "surfaceAlt": "#F1F8F9",
+    "text": "#0B2545",
+    "textSecondary": "#46607A",
+    "border": "#D9E7EA",
+    "onDark": "#FFFFFF",
+    "onDarkMuted": "#B8CCDD",
+    "mintOnDark": "#9FE2C8",
+    "success": "#0F7B53",
+    "warning": "#A34A08",
+    "warningText": "#8A3B0B",
+    "warningSoft": "#FDF1DC",
+    "whatsapp": "#0F7A43"
+  },
+  "fonts": {
+    "heading": "Fraunces",
+    "body": "Plus Jakarta Sans"
+  },
+  "radius": "1.25rem",
+  "wordmark": {
+    "primary": "Sri Parvathi",
+    "secondary": "Dental Clinic"
+  }
+}

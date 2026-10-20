@@ -1,0 +1,34 @@
+{
+  "status": "placeholder",
+  "story": {
+    "title": "Why Sri Parvathi Dental Clinic",
+    "paragraphs": [
+      "Sri Parvathi Dental Clinic was set up to give Tadepalle a dental practice where nobody feels rushed. It sits on the first floor of Perreddy Complex at Pathur Road Cross, close to Reliance Digital and the Vijayawada–Guntur road.",
+      "Dr. Ramakanth, who holds an MDS (Master of Dental Surgery), sees every patient. That means one familiar face from your first check-up to your follow-up visits, and a dentist who knows your history.",
+      "Our approach is simple: examine carefully, explain clearly, and only recommend treatment that you need. Children, nervous patients and older family members are all welcome."
+    ],
+    "image": "space-treatment-room"
+  },
+  "clinicHead": {
+    "eyebrow": "Lead dentist",
+    "title": "Dr. Ramakanth, MDS",
+    "lead": "Every consultation is with Dr. Ramakanth — from routine check-ups to root canals and wisdom tooth removal.",
+    "bookLabel": "Book with Dr. Ramakanth",
+    "profileLabel": "Read his profile"
+  },
+  "values": {
+    "title": "What you can expect",
+    "items": [
+      { "icon": "message-circle", "title": "We explain first", "text": "What we found, your options, the number of visits and the cost — before treatment starts." },
+      { "icon": "shield-check", "title": "Clean and safe", "text": "Sterilised instruments for every patient and disposable items used once." },
+      { "icon": "hand-heart", "title": "Gentle with everyone", "text": "Extra time for children, anxious patients and older family members." },
+      { "icon": "clipboard-check", "title": "Records that follow you", "text": "Your visits, prescriptions and treatment plans are kept securely on ClinicFlow247 and available in your patient account." }
+    ]
+  },
+  "team": { "title": "The team", "lead": "Our assistants and front-desk team will be introduced here soon." },
+  "starterFeatures": {
+    "title": "Your visit, made easier",
+    "lead": "Booking, reminders and records run on ClinicFlow247, in Sri Parvathi Dental Clinic's own colours.",
+    "_note": "Benefits come from src/lib/plan.ts for the clinic's plan (enterprise) — nothing the plan lacks is listed."
+  }
+}

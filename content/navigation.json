@@ -1,0 +1,44 @@
+{
+  "header": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Treatments", "href": "/treatments" },
+    { "label": "Doctors", "href": "/doctors" },
+    { "label": "Patient Education", "href": "/patient-education" },
+    { "label": "Gallery", "href": "/gallery" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer": [
+    {
+      "title": "Visit",
+      "links": [
+        { "label": "About the clinic", "href": "/about" },
+        { "label": "Dr. Ramakanth", "href": "/doctors/dr-ramakanth" },
+        { "label": "Gallery", "href": "/gallery" },
+        { "label": "Contact & directions", "href": "/contact" },
+        { "label": "Dental emergency", "href": "/emergency" }
+      ]
+    },
+    {
+      "title": "Patients",
+      "links": [
+        { "label": "Book an appointment", "href": "/book" },
+        { "label": "All treatments", "href": "/treatments" },
+        { "label": "Patient education", "href": "/patient-education" },
+        { "label": "Questions & answers", "href": "/faqs" },
+        { "label": "Patient sign in", "href": "@portal:login" },
+        { "label": "Create an account", "href": "@portal:register" },
+        { "label": "Clinic staff login", "href": "@portal:staffLogin" }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        { "label": "Privacy policy", "href": "/privacy" },
+        { "label": "Terms of use", "href": "/terms" },
+        { "label": "Medical disclaimer", "href": "/disclaimer" },
+        { "label": "Cookie policy", "href": "/cookies" }
+      ]
+    }
+  ]
+}

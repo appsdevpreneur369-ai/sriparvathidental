@@ -1,0 +1,210 @@
+{
+  "_note": "Every image the site uses, by id. Components never reference /public paths directly. ALL photos are REPRESENTATIVE stock images (Unsplash License, content/photo-credits.json, field credit) until the clinic sends its own (PENDING_ITEMS.md). The logo mark is a PLACEHOLDER designed by the web team.",
+  "logo": {
+    "mark": {
+      "src": "/brand/logo-mark.png",
+      "width": 512,
+      "height": 512,
+      "alt": "Sri Parvathi Dental Clinic logo",
+      "status": "placeholder"
+    },
+    "source": {
+      "src": "images/spdc-logo-PLACEHOLDER.svg",
+      "_note": "Placeholder mark (tooth outline on a teal tile). Replace with the clinic logo master, then npm run brand."
+    }
+  },
+  "images": {
+    "og": {
+      "src": "/images/og.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle",
+      "status": "placeholder"
+    },
+    "hero-family": {
+      "src": "/images/photos/hero-family.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Smiling young family — representative photo",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)",
+      "objectPosition": "50% 35%"
+    },
+    "treat-general": {
+      "src": "/images/photos/treat-general.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Patient having a dental check-up — representative photo",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-root-canal": {
+      "src": "/images/photos/treat-root-canal.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Tooth model showing the root canals inside a tooth",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-extraction": {
+      "src": "/images/photos/treat-extraction.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Sterile dental instruments held in a gloved hand",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-gums": {
+      "src": "/images/photos/treat-gums.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Close-up of healthy gums and teeth",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-crowns": {
+      "src": "/images/photos/treat-crowns.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Row of dental crowns",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-implants": {
+      "src": "/images/photos/treat-implants.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Dental X-ray scans on a light box — representative photo",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-dentures": {
+      "src": "/images/photos/treat-dentures.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Partial denture on a dental model",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-braces": {
+      "src": "/images/photos/treat-braces.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Dental models comparing clear aligners and braces",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-kids": {
+      "src": "/images/photos/treat-kids.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Young child happily brushing their teeth",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "treat-cosmetic": {
+      "src": "/images/photos/treat-cosmetic.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Close-up of a bright, even smile",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "article-root-canal-pain": {
+      "src": "/images/photos/article-root-canal-pain.jpg",
+      "width": 1200,
+      "height": 750,
+      "alt": "Patient relaxed in a dental chair during treatment",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "article-sensitive-teeth": {
+      "src": "/images/photos/article-sensitive-teeth.jpg",
+      "width": 1200,
+      "height": 750,
+      "alt": "Person smiling while brushing their teeth",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "article-first-visit": {
+      "src": "/images/photos/article-first-visit.jpg",
+      "width": 1200,
+      "height": 750,
+      "alt": "Small child holding a toothbrush",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "article-missing-tooth": {
+      "src": "/images/photos/article-missing-tooth.jpg",
+      "width": 1200,
+      "height": 750,
+      "alt": "Smiling elderly woman",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "space-modern-clinic": {
+      "src": "/images/photos/space-modern-clinic.jpg",
+      "width": 1600,
+      "height": 1000,
+      "alt": "Bright, modern dental clinic — representative photo",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "space-treatment-room": {
+      "src": "/images/photos/space-treatment-room.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Clean dental treatment room — representative photo",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "space-dental-chair": {
+      "src": "/images/photos/space-dental-chair.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Dental chair in a bright room — representative photo",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "space-waiting-area": {
+      "src": "/images/photos/space-waiting-area.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Calm, softly lit waiting area — representative photo",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "space-toothbrushes": {
+      "src": "/images/photos/space-toothbrushes.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Bamboo toothbrushes in a glass jar",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "smile-mirror": {
+      "src": "/images/photos/smile-mirror.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Young woman smiling at a hand mirror",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "smile-family": {
+      "src": "/images/photos/smile-family.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Cheerful family of four",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    },
+    "smile-woman": {
+      "src": "/images/photos/smile-woman.jpg",
+      "width": 1200,
+      "height": 1400,
+      "alt": "Woman laughing with a natural smile",
+      "status": "placeholder",
+      "credit": "Photo: Unsplash (representative)"
+    }
+  }
+}

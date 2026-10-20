@@ -1,0 +1,16 @@
+{
+  "_note": "General questions (/faqs). 'home: true' also shows the question on the home page. {{tokens}} are filled from content (src/lib/vars.ts).",
+  "status": "placeholder",
+  "items": [
+    { "q": "What are the clinic's timings?", "a": "We are open {{hoursSummary}}. Timings can change on festival days, so please call ahead on a holiday.", "home": true },
+    { "q": "Where exactly is the clinic?", "a": "On the first floor of Perreddy Complex at Pathur Road Cross, Tadepalle, near Reliance Digital — {{address}}.", "home": true },
+    { "q": "Do I need an appointment?", "a": "Booking online or by phone means you are seen at a fixed time with little waiting. If you walk in, we will fit you in as soon as we can.", "home": true },
+    { "q": "How much will my treatment cost?", "a": "It depends on what the examination shows. Dr. Ramakanth explains the plan and its cost before any treatment begins, so there are no surprises.", "home": true },
+    { "q": "Is the first visit just a consultation?", "a": "Usually, yes: a careful examination, a chat about what we found and your options. Simple treatment can sometimes be done the same day if you wish." },
+    { "q": "Do you see children?", "a": "Yes. We keep early visits short and friendly, and give parents practical advice on brushing and diet." },
+    { "q": "I'm nervous about the dentist. What can I do?", "a": "Tell us when you book or when you arrive. We go at your pace, explain each step and you can ask us to stop at any time." },
+    { "q": "What should I bring to my appointment?", "a": "A list of the medicines you take, any previous dental X-rays or reports, and your phone for the booking confirmation." },
+    { "q": "How do I cancel or move my appointment?", "a": "Sign in to your patient account to reschedule or cancel, or call the clinic. Letting us know early frees the slot for someone in pain." },
+    { "q": "What should I do in a dental emergency?", "a": "Call the clinic during opening hours. For heavy bleeding, swelling that affects breathing or swallowing, or a facial injury, go to the nearest hospital emergency department straight away." }
+  ]
+}

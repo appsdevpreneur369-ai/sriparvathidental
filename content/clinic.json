@@ -1,0 +1,81 @@
+{
+  "_note": "Clinic identity and contact details. Every field carries its own status. 'approved' here means verified against the clinic's public Google Business listing on 20 Oct 2026 (or supplied by the account owner); the clinic should still confirm everything (PENDING_ITEMS.md). A contact field with status 'placeholder' is never turned into a link: its buttons are hidden, it is left out of JSON-LD, and WhatsApp booking is disabled (see src/lib/contact.ts). Edit guide: docs/EDITING.md.",
+  "name": { "value": "Sri Parvathi Dental Clinic", "status": "approved" },
+  "shortName": "Sri Parvathi Dental",
+  "slug": "sri-parvathi-dental-clinic",
+  "tagline": { "value": "Unhurried, honest dental care at Pathur Road Cross, Tadepalle", "status": "placeholder" },
+  "description": {
+    "value": "Sri Parvathi Dental Clinic is a family dental clinic led by Dr. Ramakanth, MDS, on the first floor of Perreddy Complex at Pathur Road Cross, Tadepalle, near Reliance Digital.",
+    "status": "approved"
+  },
+  "address": {
+    "status": "approved",
+    "_note": "As written on the clinic's Google Business listing and confirmed by the account owner (20 Oct 2026).",
+    "doorNumber": "First Floor, Perreddy Complex",
+    "street": "Pathur Road Cross",
+    "landmark": "Reliance Digital",
+    "locality": "Tadepalle, Tadepalli",
+    "district": "Guntur",
+    "region": "Andhra Pradesh",
+    "postalCode": "522501",
+    "country": "IN",
+    "countryName": "India"
+  },
+  "phone": {
+    "status": "approved",
+    "_note": "From the clinic's Google Business listing (shown there as 089546 56789), checked 20 Oct 2026. Ask the clinic to confirm it is the number they want on the website.",
+    "display": "+91 89546 56789",
+    "e164": "+918954656789"
+  },
+  "whatsapp": {
+    "status": "placeholder",
+    "_note": "NOT CONFIRMED: we do not know whether +91 89546 56789 (or another number) takes WhatsApp. While this is a placeholder, every WhatsApp button is hidden and WhatsApp booking is off. Once the clinic confirms, set status to 'approved' (and the number) — the buttons appear automatically.",
+    "display": "+91 89546 56789",
+    "e164": "+918954656789"
+  },
+  "email": {
+    "status": "placeholder",
+    "value": "email to be confirmed"
+  },
+  "timezone": "Asia/Kolkata",
+  "hours": {
+    "_note": "From the clinic's Google Business listing, checked 20 Oct 2026: Monday–Saturday 9:30 AM – 9:30 PM, Sunday 10 AM – 2 PM (Google notes festival days may differ). Clinic to confirm.",
+    "status": "approved",
+    "sessionsStatus": "approved",
+    "daysStatus": "approved",
+    "days": [
+      { "day": "monday", "sessions": [{ "opens": "09:30", "closes": "21:30" }] },
+      { "day": "tuesday", "sessions": [{ "opens": "09:30", "closes": "21:30" }] },
+      { "day": "wednesday", "sessions": [{ "opens": "09:30", "closes": "21:30" }] },
+      { "day": "thursday", "sessions": [{ "opens": "09:30", "closes": "21:30" }] },
+      { "day": "friday", "sessions": [{ "opens": "09:30", "closes": "21:30" }] },
+      { "day": "saturday", "sessions": [{ "opens": "09:30", "closes": "21:30" }] },
+      { "day": "sunday", "sessions": [{ "opens": "10:00", "closes": "14:00" }] }
+    ]
+  },
+  "maps": {
+    "status": "approved",
+    "_note": "Google Maps place for the clinic (pin, plus code FJC8+95 Tadepalle), checked 20 Oct 2026. shareUrl uses the place's stable CID link.",
+    "query": "Sri Parvathi Dental Clinic, Perreddy Complex, Pathur Road Cross, Tadepalle, Andhra Pradesh 522501",
+    "shareUrl": "https://maps.google.com/?cid=484052835673252673",
+    "embedUrl": "https://www.google.com/maps?q=Sri+Parvathi+Dental+Clinic,+Perreddy+Complex,+Tadepalle&ll=16.4709375,80.6154375&z=17&output=embed",
+    "geo": { "lat": 16.4709375, "lng": 80.6154375 }
+  },
+  "areaServed": {
+    "status": "placeholder",
+    "places": ["Tadepalli", "Tadepalle", "Undavalli", "Mangalagiri", "Vijayawada", "Guntur"]
+  },
+  "foundingNote": {
+    "status": "placeholder",
+    "value": "Serving Tadepalle from Pathur Road Cross"
+  },
+  "google": {
+    "status": "approved",
+    "_note": "Public Google rating, copied by hand on the date below. Shown on the site with that date and a link to the reviews; NEVER emitted as schema.org aggregateRating (Google ignores/penalises self-served review markup for local businesses). Update the numbers and date when refreshing.",
+    "rating": 4.8,
+    "reviewCount": 28,
+    "checkedOn": "2026-10-20",
+    "url": "https://maps.google.com/?cid=484052835673252673",
+    "reviewTopics": ["Wisdom tooth removal", "Root canal", "Modern equipment", "Patience", "Helpful staff"]
+  }
+}

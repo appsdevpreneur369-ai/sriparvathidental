@@ -1,0 +1,15 @@
+{
+  "_note": "'How can we help?' symptom chips on the home page and the first step of the booking wizard. Each problem routes to doctor ids from doctors.json and links to a treatment category. With one dentist today, everything routes to Dr. Ramakanth; add doctors here when the clinic's team is confirmed (PENDING_ITEMS.md).",
+  "status": "placeholder",
+  "problems": [
+    { "id": "toothache", "label": "Toothache or throbbing pain", "icon": "zap", "doctors": ["ramakanth"], "category": "root-canal-treatment" },
+    { "id": "wisdom-tooth", "label": "Pain at the back of the jaw", "icon": "scissors", "doctors": ["ramakanth"], "category": "tooth-extraction" },
+    { "id": "sensitivity", "label": "Teeth sting with cold or sweets", "icon": "snowflake", "doctors": ["ramakanth"], "category": "general-dentistry" },
+    { "id": "bleeding-gums", "label": "Gums bleed when brushing", "icon": "droplet", "doctors": ["ramakanth"], "category": "gum-treatment" },
+    { "id": "broken-tooth", "label": "Chipped or broken tooth", "icon": "puzzle", "doctors": ["ramakanth"], "category": "crowns-bridges" },
+    { "id": "missing-teeth", "label": "Gap from a missing tooth", "icon": "circle-dashed", "doctors": ["ramakanth"], "category": "dental-implants" },
+    { "id": "child-check", "label": "Check-up for my child", "icon": "smile", "doctors": ["ramakanth"], "category": "kids-dentistry" },
+    { "id": "crooked-teeth", "label": "Crooked or crowded teeth", "icon": "align-center", "doctors": ["ramakanth"], "category": "braces-aligners" },
+    { "id": "stained-teeth", "label": "Yellow or stained teeth", "icon": "sparkles", "doctors": ["ramakanth"], "category": "cosmetic-dentistry" }
+  ]
+}

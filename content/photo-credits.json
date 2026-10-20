@@ -1,0 +1,143 @@
+{
+  "_note": "Representative stock photos (Unsplash License). PLACEHOLDERS: not photos of Sri Parvathi Dental Clinic or its doctor. Logged in PENDING_ITEMS.md.",
+  "photos": {
+    "hero-family.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1657912230234-87f45165424d",
+      "description": "Smiling young family outdoors"
+    },
+    "treat-general.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1663755489920-5e09f66d011a",
+      "description": "Dental check-up in a modern clinic"
+    },
+    "treat-root-canal.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1777793389944-f7165259a05c",
+      "description": "Cross-section tooth model showing the root canals"
+    },
+    "treat-extraction.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1771442873038-dda05b6ca447",
+      "description": "Sterile dental instruments in a gloved hand"
+    },
+    "treat-gums.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed",
+      "description": "Close-up of healthy gums and teeth"
+    },
+    "treat-crowns.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1687811233721-70ebc025f8c0",
+      "description": "Row of dental crowns on a dark background"
+    },
+    "treat-implants.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+      "description": "Dental X-ray scans on a light box"
+    },
+    "treat-dentures.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1562330743-fbc6ef07ca78",
+      "description": "Partial denture on a dental model"
+    },
+    "treat-braces.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1720685193942-5a1c5ac7fd80",
+      "description": "Dental models with clear aligners and braces"
+    },
+    "treat-kids.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1780327065569-b2205c22104e",
+      "description": "Young child happily brushing their teeth"
+    },
+    "treat-cosmetic.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1769559893692-c6d0623bf8e4",
+      "description": "Close-up of a bright, even smile"
+    },
+    "article-root-canal-pain.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1681939282781-341ac4f61996",
+      "description": "Patient in a dental chair during treatment"
+    },
+    "article-sensitive-teeth.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1609840113564-ab4aba4956c4",
+      "description": "Smiling person brushing their teeth"
+    },
+    "article-first-visit.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1694286068431-569c90a6df72",
+      "description": "Small child holding a toothbrush"
+    },
+    "article-missing-tooth.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7",
+      "description": "Smiling elderly woman"
+    },
+    "space-modern-clinic.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
+      "description": "Bright, modern dental clinic with treatment chairs"
+    },
+    "space-treatment-room.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1704455306251-b4634215d98f",
+      "description": "Clean treatment room with a dental chair"
+    },
+    "space-dental-chair.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787",
+      "description": "Dental chair with equipment in a bright room"
+    },
+    "space-waiting-area.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1759262151080-e05ba1c6294f",
+      "description": "Calm, softly lit waiting area"
+    },
+    "space-toothbrushes.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04",
+      "description": "Bamboo toothbrushes in a glass jar"
+    },
+    "smile-mirror.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1785860817740-c95735ba03b1",
+      "description": "Young woman smiling at herself in a hand mirror"
+    },
+    "smile-family.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1659352790654-058e9077a4f4",
+      "description": "Cheerful family of four"
+    },
+    "smile-woman.jpg": {
+      "source": "Unsplash",
+      "license": "Unsplash License (https://unsplash.com/license)",
+      "cdn": "https://images.unsplash.com/photo-1617812191081-2a24e3f30e45",
+      "description": "Woman laughing with a natural smile"
+    }
+  }
+}

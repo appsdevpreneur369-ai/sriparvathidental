@@ -1,0 +1,39 @@
+{
+  "_note": "Doctors shown on the site and sent to ClinicFlow (npm run tenant). Only Dr. Ramakanth, MDS is known (account owner, 20 Oct 2026). His MDS specialty branch, registration number, experience, photo and the rest of the team are NOT known yet — they stay placeholders and are never invented (PENDING_ITEMS.md). Initials avatar until a real photo arrives; never a stock photo.",
+  "consultSlotMinutes": 20,
+  "doctors": [
+    {
+      "id": "ramakanth",
+      "status": "placeholder",
+      "slug": "dr-ramakanth",
+      "previousSlugs": [],
+      "firstName": "Ramakanth",
+      "lastName": "",
+      "displayName": "Dr. Ramakanth",
+      "initials": "R",
+      "qualification": "MDS (Master of Dental Surgery)",
+      "specialty": "Dental Surgeon",
+      "schemaSpecialty": "Dentistry",
+      "role": "Lead Dentist",
+      "isHead": true,
+      "photo": null,
+      "photoSecondary": null,
+      "registrationNumber": "",
+      "clinicflowDoctorId": null,
+      "summary": "Dr. Ramakanth holds a Master of Dental Surgery and leads Sri Parvathi Dental Clinic, seeing patients for everyday dental care as well as root canals and tooth removal.",
+      "bio": [
+        "Dr. Ramakanth is the dentist behind Sri Parvathi Dental Clinic at Pathur Road Cross, Tadepalle. He holds an MDS — a postgraduate master's degree in dental surgery taken after the five-year BDS.",
+        "Patients reviewing the clinic on Google most often mention his patience, the clinic's helpful staff and modern equipment, and treatments such as root canals and wisdom tooth removal.",
+        "At your first visit he examines your teeth and gums, explains what he finds and talks you through your options before any treatment starts."
+      ],
+      "focus": ["General and family dentistry", "Root canal treatment", "Tooth and wisdom tooth removal"],
+      "consultation": [
+        { "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"], "opens": "09:30", "closes": "21:30" },
+        { "days": ["sunday"], "opens": "10:00", "closes": "14:00" }
+      ],
+      "consultationStatus": "placeholder",
+      "experienceYears": null,
+      "experienceStatus": "placeholder"
+    }
+  ]
+}

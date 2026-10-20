@@ -1,0 +1,29 @@
+{
+  "status": "placeholder",
+  "_note": "Booking popup + wizard. See docs/BOOKING.md. 'mode' is the preferred mode; the site falls back automatically clinicflow -> enquiry -> whatsapp when a mode is unavailable. WhatsApp is only offered while the clinic's WhatsApp number is approved (clinic.json — not yet). It never shows a success the API did not return.",
+  "mode": "clinicflow",
+  "clinicflow": {
+    "_note": "Empty until SPDC is onboarded on a ClinicFlow247 environment. Build-time overrides: NEXT_PUBLIC_CLINICFLOW_API_URL, NEXT_PUBLIC_CLINICFLOW_CLINIC_SLUG, NEXT_PUBLIC_CLINICFLOW_CLINIC_ID. clinicId is optional (looked up from the slug).",
+    "apiBaseUrl": "",
+    "clinicSlug": "",
+    "clinicId": ""
+  },
+  "advanceDays": 30,
+  "otpResendSeconds": 30,
+  "allowDirectSpecialistBooking": true,
+  "defaultDoctor": "ramakanth",
+  "generalOption": { "label": "I'm not sure — I'd like a check-up", "doctors": ["ramakanth"] },
+  "popup": {
+    "_note": "Auto-opens once per browsing session after delaySeconds; never on page load and never on excludedPaths.",
+    "enabled": true,
+    "delaySeconds": 12,
+    "oncePerSession": true,
+    "showOnMobile": false,
+    "excludedPaths": ["/book", "/privacy", "/terms", "/disclaimer", "/cookies", "/emergency", "/contact"]
+  },
+  "consent": "I agree that Sri Parvathi Dental Clinic may contact me about this appointment by SMS, WhatsApp, phone or email, and I have read the privacy policy.",
+  "whatsappMessage": "Namaste {{clinic}}, I'd like to book a visit.\nName: {{name}}\nMobile: {{phone}}\nReason: {{problem}}\nDentist: {{doctor}}\nPreferred day: {{day}}\nPreferred time: {{time}}\n(via the clinic website)",
+  "enquiryMessage": "Appointment request from the website.\nReason: {{problem}}\nDentist: {{doctor}}\nPreferred day: {{day}}\nPreferred time: {{time}}",
+  "generalWhatsappMessage": "Namaste {{clinic}}, I have a question.",
+  "note": "In severe pain, with facial swelling, or bleeding that won't stop? Please call the clinic instead of booking online."
+}

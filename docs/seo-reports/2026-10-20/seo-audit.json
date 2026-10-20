@@ -1,0 +1,411 @@
+{
+  "base": "http://localhost:3300",
+  "date": "2026-10-20T13:42:27.270Z",
+  "rows": [
+    {
+      "path": "/",
+      "title": "Sri Parvathi Dental Clinic | Dentist in Tadepalli",
+      "titleLength": 49,
+      "descriptionLength": 156,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments",
+      "title": "Dental Treatments in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 52,
+      "descriptionLength": 156,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/general-dentistry",
+      "title": "Dental Check-ups & Fillings in Tadepalli",
+      "titleLength": 40,
+      "descriptionLength": 140,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/root-canal-treatment",
+      "title": "Root Canal Treatment in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 55,
+      "descriptionLength": 147,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/tooth-extraction",
+      "title": "Wisdom Tooth Removal in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 55,
+      "descriptionLength": 139,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/gum-treatment",
+      "title": "Bleeding Gums Treatment in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 58,
+      "descriptionLength": 133,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/crowns-bridges",
+      "title": "Dental Crowns & Bridges in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 58,
+      "descriptionLength": 136,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/dental-implants",
+      "title": "Dental Implants in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 50,
+      "descriptionLength": 149,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/dentures",
+      "title": "Dentures in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 43,
+      "descriptionLength": 142,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/braces-aligners",
+      "title": "Braces & Clear Aligners in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 58,
+      "descriptionLength": 138,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/kids-dentistry",
+      "title": "Children's Dentist in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 53,
+      "descriptionLength": 145,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/treatments/cosmetic-dentistry",
+      "title": "Teeth Whitening in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 50,
+      "descriptionLength": 140,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/doctors",
+      "title": "Our Dentist — Dr. Ramakanth, MDS | Sri Parvathi Dental",
+      "titleLength": 54,
+      "descriptionLength": 136,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList",
+        "IndividualPhysician"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/doctors/dr-ramakanth",
+      "title": "Dr. Ramakanth, MDS — Dentist in Tadepalli",
+      "titleLength": 41,
+      "descriptionLength": 158,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "IndividualPhysician",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/book",
+      "title": "Book a Dental Appointment | Sri Parvathi Dental",
+      "titleLength": 47,
+      "descriptionLength": 146,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/contact",
+      "title": "Contact & Directions | Sri Parvathi Dental",
+      "titleLength": 42,
+      "descriptionLength": 158,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/about",
+      "title": "About Our Dental Clinic in Tadepalli | Sri Parvathi Dental",
+      "titleLength": 58,
+      "descriptionLength": 134,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/gallery",
+      "title": "Gallery | Sri Parvathi Dental, Tadepalle, Tadepalli",
+      "titleLength": 51,
+      "descriptionLength": 146,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/patient-education",
+      "title": "Patient Education — Dental Guides | Sri Parvathi Dental",
+      "titleLength": 55,
+      "descriptionLength": 157,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/patient-education/is-root-canal-painful",
+      "title": "Is a Root Canal Painful? What Really Happens",
+      "titleLength": 44,
+      "descriptionLength": 151,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage+Article",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/patient-education/childs-first-dental-visit",
+      "title": "Your Child's First Dental Visit: A Parent's Guide",
+      "titleLength": 49,
+      "descriptionLength": 146,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage+Article",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/patient-education/replacing-a-missing-tooth",
+      "title": "Missing a Tooth? Implant, Bridge or Denture Compared",
+      "titleLength": 52,
+      "descriptionLength": 141,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage+Article",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/patient-education/sensitive-teeth-causes",
+      "title": "Sensitive Teeth: Why They Sting and What Helps",
+      "titleLength": 46,
+      "descriptionLength": 152,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "MedicalWebPage+Article",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/faqs",
+      "title": "Questions & Answers | Sri Parvathi Dental",
+      "titleLength": 41,
+      "descriptionLength": 144,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/emergency",
+      "title": "Dental Emergency Help | Sri Parvathi Dental",
+      "titleLength": 43,
+      "descriptionLength": 160,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/privacy",
+      "title": "Privacy Policy | Sri Parvathi Dental, Tadepalle, Tadepalli",
+      "titleLength": 58,
+      "descriptionLength": 153,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/terms",
+      "title": "Terms of Use | Sri Parvathi Dental, Tadepalle, Tadepalli",
+      "titleLength": 56,
+      "descriptionLength": 134,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/disclaimer",
+      "title": "Medical Disclaimer | Sri Parvathi Dental",
+      "titleLength": 40,
+      "descriptionLength": 135,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    },
+    {
+      "path": "/cookies",
+      "title": "Cookie Policy | Sri Parvathi Dental, Tadepalle, Tadepalli",
+      "titleLength": 57,
+      "descriptionLength": 129,
+      "h1": 1,
+      "jsonLdTypes": [
+        "Dentist",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "issues": []
+    }
+  ],
+  "sitemapImages": 14,
+  "brokenImages": 0
+}

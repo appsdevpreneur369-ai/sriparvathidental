@@ -1,0 +1,13 @@
+{
+  "status": "placeholder",
+  "title": "Dental emergency? Start here",
+  "lead": "Most dental problems can wait for the next open slot — but some can't. Here's what to do right now.",
+  "hospitalWarning": "Go to a hospital emergency department immediately for swelling that spreads to the eye or neck, difficulty breathing or swallowing, high fever with facial swelling, a jaw injury, or bleeding that won't stop after 20 minutes of firm pressure.",
+  "situations": [
+    { "title": "Severe toothache", "steps": ["Rinse with warm salt water and gently floss to remove trapped food.", "Take a painkiller you normally use safely, following the pack instructions. Don't put tablets on the gum.", "Call the clinic to be seen as soon as possible."] },
+    { "title": "Knocked-out adult tooth", "steps": ["Pick it up by the crown (the white part), not the root.", "If it is dirty, rinse briefly in milk — do not scrub it.", "Push it back into the socket if you can and bite on a clean cloth; otherwise keep it in milk.", "Come to the clinic within the hour if at all possible."] },
+    { "title": "Broken or chipped tooth", "steps": ["Rinse your mouth with warm water and keep any pieces.", "Use a cold pack on the cheek for swelling.", "Call the clinic for the next available appointment."] },
+    { "title": "Swelling of the face or gum", "steps": ["Hold a cold compress against the cheek — never a hot one.", "Call the clinic the same day.", "If the swelling spreads quickly, or you have fever or trouble swallowing, go to a hospital emergency department."] },
+    { "title": "Bleeding after an extraction", "steps": ["Bite firmly on a folded clean gauze or cloth for 20–30 minutes without checking.", "Sit upright and avoid rinsing or spitting.", "If bleeding is still heavy after that, call the clinic or go to a hospital."] }
+  ]
+}

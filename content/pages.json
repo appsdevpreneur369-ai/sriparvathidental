@@ -1,0 +1,67 @@
+{
+  "_note": "Per-page <title> (a suffix ' | Sri Parvathi Dental, Tadepalli' is added when it fits in 60 characters), meta description (50–170 characters), H1 and intro. Local keywords: dentist in Tadepalli, dental clinic Tadepalli, MDS dentist near Vijayawada / Guntur.",
+  "home": {
+    "title": "Sri Parvathi Dental Clinic | Dentist in Tadepalli",
+    "description": "Dental clinic in Tadepalli led by Dr. Ramakanth, MDS. Check-ups, root canals, wisdom teeth, implants and braces at Pathur Road Cross, near Reliance Digital.",
+    "absoluteTitle": true
+  },
+  "about": {
+    "title": "About Our Dental Clinic in Tadepalli",
+    "description": "Meet Sri Parvathi Dental Clinic: an MDS-led family dental clinic on the first floor of Perreddy Complex, Pathur Road Cross, Tadepalle.",
+    "h1": "A neighbourhood clinic that takes its time",
+    "intro": "Sri Parvathi Dental Clinic sits a few steps from Pathur Road Cross in Tadepalle. Here is how we work, and what to expect when you visit."
+  },
+  "doctors": {
+    "title": "Our Dentist — Dr. Ramakanth, MDS",
+    "description": "Dr. Ramakanth, MDS leads Sri Parvathi Dental Clinic in Tadepalli. Read his profile, consultation timings and book an appointment online.",
+    "h1": "The dentist you'll see",
+    "intro": "Every consultation at Sri Parvathi Dental Clinic is with Dr. Ramakanth, MDS."
+  },
+  "treatments": {
+    "title": "Dental Treatments in Tadepalli",
+    "description": "Dental treatments at Sri Parvathi Dental Clinic, Tadepalli: check-ups, fillings, root canals, wisdom teeth, gum care, crowns, implants, dentures and braces.",
+    "h1": "Treatments, explained simply",
+    "intro": "From a six-monthly check-up to replacing a missing tooth — what each treatment involves, how many visits it usually takes, and who it is for."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "A look at Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle. The clinic's own photos are on their way; images shown now are representative.",
+    "h1": "Inside the clinic",
+    "intro": "Our own photographs are being prepared. Until they arrive, the images below are representative and clearly marked as such."
+  },
+  "education": {
+    "title": "Patient Education — Dental Guides",
+    "description": "Plain-language dental guides from Sri Parvathi Dental Clinic, Tadepalli: root canal myths, sensitive teeth, your child's first visit and replacing a missing tooth.",
+    "h1": "Know your teeth",
+    "intro": "Short, practical guides to the questions we hear most often in the chair."
+  },
+  "faqs": {
+    "title": "Questions & Answers",
+    "description": "Answers to common questions about visiting Sri Parvathi Dental Clinic in Tadepalli: timings, booking, fees, first visits and dental emergencies.",
+    "h1": "Questions, answered",
+    "intro": "Can't find what you are looking for? Ask us when you book — or call the clinic."
+  },
+  "book": {
+    "title": "Book a Dental Appointment",
+    "description": "Book an appointment with Dr. Ramakanth, MDS at Sri Parvathi Dental Clinic, Tadepalli. Choose a reason, pick a time and confirm with a mobile code.",
+    "h1": "Book your visit",
+    "intro": "It takes about a minute. You'll get a confirmation as soon as your time is booked."
+  },
+  "contact": {
+    "title": "Contact & Directions",
+    "description": "Sri Parvathi Dental Clinic, First Floor, Perreddy Complex, Pathur Road Cross, near Reliance Digital, Tadepalle, Andhra Pradesh 522501. Phone, timings and map.",
+    "h1": "Find us at Pathur Road Cross",
+    "intro": "First floor of Perreddy Complex, near Reliance Digital, Tadepalle."
+  },
+  "emergency": {
+    "title": "Dental Emergency Help",
+    "description": "What to do about a knocked-out tooth, severe toothache, swelling or a broken tooth — and when to call Sri Parvathi Dental Clinic in Tadepalli or go to hospital.",
+    "h1": "Dental emergency? Start here",
+    "intro": "Clear first steps for the most common dental emergencies."
+  },
+  "privacy": { "title": "Privacy Policy", "description": "How Sri Parvathi Dental Clinic collects, uses and protects your personal and health information under India's Digital Personal Data Protection Act, 2023." },
+  "terms": { "title": "Terms of Use", "description": "Terms for using the Sri Parvathi Dental Clinic website and its online appointment booking, including cancellations and acceptable use." },
+  "disclaimer": { "title": "Medical Disclaimer", "description": "The information on the Sri Parvathi Dental Clinic website is general and is not a substitute for an examination by a qualified dentist." },
+  "cookies": { "title": "Cookie Policy", "description": "Which cookies and browser storage the Sri Parvathi Dental Clinic website uses, why, and how you can control them in your browser." },
+  "notFound": { "title": "Page not found", "h1": "This page has gone missing", "intro": "The link may be old or mistyped. These pages might help instead:" }
+}
