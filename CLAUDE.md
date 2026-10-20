@@ -4,11 +4,11 @@ Public website for **Sri Parvathi Dental Clinic**, First Floor, Perreddy Complex
 
 **Delivery model (owner's decision, 20 Oct 2026): website + core tenant.** This repo is the public site plus the generated tenant file `tenant/sri-parvathi.json`. Every role and workflow (SUPER_ADMIN, CLINIC_ADMIN, DOCTOR, PATIENT) comes from ClinicFlow core, branded via the Enterprise theme tokens, logo and appTitle. **Never fork core** for SPDC: `D:\ClinicFlow\CLAUDE.md` forbids per-tenant codebases.
 
-Status: **built and tested locally, not pushed, not deployed.** Open items: `PENDING_ITEMS.md`. Test report: `docs/E2E_2026-10-20.md`.
+Status: **built and tested locally; pushed to GitHub on 20 Oct 2026** (https://github.com/appsdevpreneur369-ai/sriparvathidental, `main`, at the owner's request). **Not deployed.** Open items: `PENDING_ITEMS.md`. Test report: `docs/E2E_2026-10-20.md`.
 
 ## Hard rules
 
-- **No push and no deploy until the owner replies "APPROVED".** That covers GitHub, staging and production alike, and also running the tenant file against staging or production or changing the ClinicFlow staging API.
+- **No deploy until the owner replies "APPROVED".** Pushing to the GitHub repo happens when the owner asks. Staging and production deploys need APPROVED, and also running the tenant file against staging or production or changing the ClinicFlow staging API.
 - **Read-only:** `D:\ClinicFlow`, `D:\DR-SINDHU`, `D:\SMSDC`. Local e2e uses a `git archive` copy of core in `.local-stack/` plus a throwaway Postgres (`docs/LOCAL_STACK.md`). Core bugs are reported, not patched here.
 - **Plan gate:** `content/plan.json` = `enterprise`. `src/lib/plan.ts` stops the site promising anything the plan doesn't include.
 - **Everything config-driven** from `/content` and zod-validated. Every record has `status: approved | placeholder`. Components never hard-code copy, colours, images, phone numbers or hours.
@@ -53,4 +53,5 @@ In Git Bash, prefix scripts that take `/paths` with `MSYS_NO_PATHCONV=1`.
 9. [x] Visual QA 360/768/1280 (0 overflow), keyboard 10/10, Lighthouse (SEO 100, A11y 100, mobile Perf 91–97), SEO audit 29 pages / 0 JSON-LD errors (`docs/seo-reports/2026-10-20`, `docs/screenshots`)
 10. [x] First git commit (local only, `fdebc54`)
 11. [x] Owner's answers (20 Oct 2026): WhatsApp approved, logo + favicon designed, subdomain confirmed; email and registration number kept as placeholders with documented swap steps
-12. [ ] Owner review, then **"APPROVED"**, then GitHub push, staging onboarding and deploy
+12. [x] GitHub push to `appsdevpreneur369-ai/sriparvathidental` (20 Oct 2026, owner's request)
+13. [ ] **"APPROVED"**, then staging onboarding (tenant file, logo/favicon upload, subdomain tenant app + LB rule + DNS) and deploy

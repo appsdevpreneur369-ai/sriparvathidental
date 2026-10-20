@@ -42,4 +42,4 @@ Start with **`docs/EDITING.md`** to change content, and **`CLAUDE.md`** for proj
 
 ## Deployment
 
-**Not deployed.** Nothing is pushed or deployed until the owner replies **"APPROVED"**. When approved, it follows the other ClinicFlow247 sites: build the Docker image locally, push to Artifact Registry, `gcloud run deploy`.
+Code: https://github.com/appsdevpreneur369-ai/sriparvathidental (`main`). **Not deployed yet.** Staging and production need the owner's **"APPROVED"**. When approved, it follows the other ClinicFlow247 sites: build the Docker image locally, push to Artifact Registry, `gcloud run deploy`.
