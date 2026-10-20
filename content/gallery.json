@@ -1,16 +1,18 @@
 {
-  "_note": "PLACEHOLDER gallery: representative stock photos only, each captioned as such, until the clinic sends its own photographs (PENDING_ITEMS.md). Never present stock images as the clinic's own rooms or staff.",
+  "_note": "Gallery. clinic-* are the clinic's OWN photos (supplied 20 Oct 2026): captioned plainly, and the only ones that may appear in gallery JSON-LD. Everything else is a representative stock photo, captioned as such, with Indian faces across age groups (owner's request, 20 Oct 2026). Never present stock images as the clinic's own rooms or staff.",
   "status": "placeholder",
-  "intro": "Representative photos while we prepare our own — the real Sri Parvathi Dental Clinic photos will replace these soon.",
+  "intro": "The first photos are our clinic at Pathur Road Cross. The rest are representative photos until we take more of our own.",
   "categories": ["Clinic", "Care", "Smiles"],
   "items": [
-    { "image": "space-modern-clinic", "caption": "A bright treatment area (representative photo)", "category": "Clinic" },
-    { "image": "space-treatment-room", "caption": "Clean, organised treatment room (representative photo)", "category": "Clinic" },
-    { "image": "space-dental-chair", "caption": "Modern dental chair (representative photo)", "category": "Clinic" },
-    { "image": "space-waiting-area", "caption": "A calm place to wait (representative photo)", "category": "Clinic" },
-    { "image": "space-toothbrushes", "caption": "Everyday care starts at home (representative photo)", "category": "Care" },
+    { "image": "clinic-treatment-rooms", "caption": "Our two treatment rooms", "category": "Clinic" },
+    { "image": "clinic-waiting-area", "caption": "Our waiting area", "category": "Clinic" },
+    { "image": "smile-grandparents", "caption": "Care for every generation (representative photo)", "category": "Smiles" },
     { "image": "treat-general", "caption": "Routine check-up (representative photo)", "category": "Care" },
-    { "image": "smile-mirror", "caption": "Seeing the result (representative photo)", "category": "Smiles" },
+    { "image": "smile-young-woman", "caption": "A confident smile (representative photo)", "category": "Smiles" },
+    { "image": "treat-kids", "caption": "Good habits start young (representative photo)", "category": "Care" },
+    { "image": "smile-teen", "caption": "Smiles in the teenage years (representative photo)", "category": "Smiles" },
+    { "image": "smile-elder", "caption": "Healthy smiles at any age (representative photo)", "category": "Smiles" },
+    { "image": "space-toothbrushes", "caption": "Everyday care starts at home (representative photo)", "category": "Care" },
     { "image": "smile-family", "caption": "Dental care for the whole family (representative photo)", "category": "Smiles" }
   ]
 }

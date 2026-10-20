@@ -19,7 +19,7 @@ export default function AboutPage() {
   const google = siteClinic.google;
   return (
     <>
-      <PageHeader title={p.h1!} intro={p.intro} image={getImage('space-modern-clinic')} imageLayout="wide" crumbs={[{ name: 'About', path: '/about' }]} badge={<DraftBadge status={a.status} />} />
+      <PageHeader title={p.h1!} intro={p.intro} image={getImage('clinic-treatment-rooms')} imageLayout="wide" crumbs={[{ name: 'About', path: '/about' }]} badge={<DraftBadge status={a.status} />} />
 
       <section className="section">
         <div className="container-site grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -34,8 +34,8 @@ export default function AboutPage() {
           </div>
           <figure className="relative">
             <div aria-hidden="true" className="absolute -right-4 -top-4 h-full w-full rounded-blob bg-mintSoft" />
-            <Image src={story.src} alt={story.alt} width={story.width} height={story.height} sizes="(min-width:1024px) 40vw, 100vw" className="relative aspect-[4/3] w-full rounded-blob object-cover shadow-lift" />
-            <figcaption className="relative mt-3 text-xs text-textSecondary">Representative photo — the clinic&apos;s own photos are on their way.</figcaption>
+            <Image src={story.src} alt={story.alt} width={story.width} height={story.height} sizes="(min-width:1024px) 40vw, 100vw" className="relative aspect-[4/3] w-full rounded-blob object-cover shadow-lift" style={{ objectPosition: story.objectPosition }} />
+            <figcaption className="relative mt-3 text-xs text-textSecondary">{story.credit ? 'Representative photo.' : story.alt}</figcaption>
           </figure>
         </div>
       </section>

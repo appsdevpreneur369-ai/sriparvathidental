@@ -33,7 +33,7 @@
       "We believe a good dental visit starts with listening. You'll hear what we see, what your choices are and what each one costs — before a single instrument is picked up."
     ],
     "points": ["Every consultation with Dr. Ramakanth, MDS", "Sterilised instruments for every patient", "Clear treatment plans and costs upfront"],
-    "image": "space-modern-clinic",
+    "image": "clinic-waiting-area",
     "badgeValue": "{{googleRating}}★",
     "badgeLabel": "on Google",
     "cta": { "label": "About the clinic", "href": "/about" }
@@ -71,7 +71,7 @@
       { "title": "Confirm", "text": "Your details and a mobile code" }
     ]
   },
-  "gallery": { "eyebrow": "The clinic", "title": "A bright, welcoming space", "lead": "Representative photos for now — our own pictures are on their way." },
+  "gallery": { "eyebrow": "The clinic", "title": "A bright, welcoming space", "lead": "Our treatment rooms and waiting area at Pathur Road Cross, plus a few representative photos." },
   "education": { "eyebrow": "Patient education", "title": "Good to know before your visit", "lead": "Plain-language answers to questions we hear every week." },
   "faq": { "eyebrow": "FAQs", "title": "Quick answers" },
   "visit": { "eyebrow": "Visit us", "title": "Timings & directions", "lead": "First Floor, Perreddy Complex, Pathur Road Cross — near Reliance Digital." },

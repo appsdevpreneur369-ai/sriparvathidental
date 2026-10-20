@@ -44,13 +44,26 @@ describe('content schema', () => {
     expect(checkReferences(bad).join()).toMatch(/stock photo/);
   });
 
-  it('every stock photo is marked placeholder with a credit, and every gallery caption says "representative"', () => {
+  it("clinic-* photos are the clinic's own (approved, no credit); every other photo is credited stock, captioned 'representative'", () => {
     const imgs = read('images.json').images;
-    for (const [id, img] of Object.entries(imgs) as [string, { status: string; credit?: string }][]) if (id !== 'og') {
-      expect(img.status).toBe('placeholder');
-      expect(img.credit).toBeTruthy();
+    const credits = read('photo-credits.json');
+    for (const [id, img] of Object.entries(imgs) as [string, { src: string; status: string; credit?: string }][]) {
+      if (id === 'og') continue;
+      const file = img.src.split('/').pop()!;
+      if (id.startsWith('clinic-')) {
+        expect(img.status).toBe('approved');
+        expect(img.credit).toBeUndefined();
+        expect(credits.own[file]).toBeTruthy();
+      } else {
+        expect(img.status).toBe('placeholder');
+        expect(img.credit).toBeTruthy();
+        expect(credits.photos[file]).toBeTruthy();
+      }
     }
-    for (const g of read('gallery.json').items) if (imgs[g.image].credit) expect(g.caption).toMatch(/representative/i);
+    for (const g of read('gallery.json').items) {
+      if (imgs[g.image].credit) expect(g.caption).toMatch(/representative/i);
+      else expect(g.caption).not.toMatch(/representative/i);
+    }
   });
 
   it('the Google rating is dated and never emitted as aggregateRating JSON-LD', () => {

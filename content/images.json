@@ -1,5 +1,5 @@
 {
-  "_note": "Every image the site uses, by id. Components never reference /public paths directly. ALL photos are REPRESENTATIVE stock images (Unsplash License, content/photo-credits.json, field credit) until the clinic sends its own (PENDING_ITEMS.md). The logo mark is the clinic's logo (designed by the web team, approved by the account owner 20 Oct 2026).",
+  "_note": "Every image the site uses, by id. Components never reference /public paths directly. clinic-* are the clinic's OWN photos (approved, no credit). Every other photo is a REPRESENTATIVE stock image (Unsplash / Pexels licences, content/photo-credits.json, field credit) and every person shown is Indian (owner's request, 20 Oct 2026). The logo mark is the clinic's logo (designed by the web team, approved by the account owner 20 Oct 2026).",
   "logo": {
     "mark": {
       "src": "/brand/logo-mark.png",
@@ -34,9 +34,9 @@
       "src": "/images/photos/treat-general.jpg",
       "width": 1200,
       "height": 800,
-      "alt": "Patient having a dental check-up — representative photo",
+      "alt": "Dentist checking a young boy's teeth — representative photo",
       "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
+      "credit": "Photo: Pexels (representative)"
     },
     "treat-root-canal": {
       "src": "/images/photos/treat-root-canal.jpg",
@@ -58,9 +58,9 @@
       "src": "/images/photos/treat-gums.jpg",
       "width": 1200,
       "height": 800,
-      "alt": "Close-up of healthy gums and teeth",
+      "alt": "Close-up of a healthy smile, teeth and gums",
       "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
+      "credit": "Photo: Pexels (representative)"
     },
     "treat-crowns": {
       "src": "/images/photos/treat-crowns.jpg",
@@ -98,17 +98,17 @@
       "src": "/images/photos/treat-kids.jpg",
       "width": 1200,
       "height": 800,
-      "alt": "Young child happily brushing their teeth",
+      "alt": "Young boy smiling while brushing his teeth",
       "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
+      "credit": "Photo: Pexels (representative)"
     },
     "treat-cosmetic": {
       "src": "/images/photos/treat-cosmetic.jpg",
       "width": 1200,
       "height": 800,
-      "alt": "Close-up of a bright, even smile",
+      "alt": "Young woman with a bright, natural smile",
       "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
+      "credit": "Photo: Pexels (representative)"
     },
     "article-root-canal-pain": {
       "src": "/images/photos/article-root-canal-pain.jpg",
@@ -122,17 +122,17 @@
       "src": "/images/photos/article-sensitive-teeth.jpg",
       "width": 1200,
       "height": 750,
-      "alt": "Person smiling while brushing their teeth",
+      "alt": "Girl laughing while brushing her teeth",
       "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
+      "credit": "Photo: Pexels (representative)"
     },
     "article-first-visit": {
       "src": "/images/photos/article-first-visit.jpg",
       "width": 1200,
       "height": 750,
-      "alt": "Small child holding a toothbrush",
+      "alt": "Young boy in the dental chair during a check-up — representative photo",
       "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
+      "credit": "Photo: Pexels (representative)"
     },
     "article-missing-tooth": {
       "src": "/images/photos/article-missing-tooth.jpg",
@@ -142,51 +142,11 @@
       "status": "placeholder",
       "credit": "Photo: Unsplash (representative)"
     },
-    "space-modern-clinic": {
-      "src": "/images/photos/space-modern-clinic.jpg",
-      "width": 1600,
-      "height": 1000,
-      "alt": "Bright, modern dental clinic — representative photo",
-      "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
-    },
-    "space-treatment-room": {
-      "src": "/images/photos/space-treatment-room.jpg",
-      "width": 1200,
-      "height": 900,
-      "alt": "Clean dental treatment room — representative photo",
-      "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
-    },
-    "space-dental-chair": {
-      "src": "/images/photos/space-dental-chair.jpg",
-      "width": 1200,
-      "height": 900,
-      "alt": "Dental chair in a bright room — representative photo",
-      "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
-    },
-    "space-waiting-area": {
-      "src": "/images/photos/space-waiting-area.jpg",
-      "width": 1200,
-      "height": 900,
-      "alt": "Calm, softly lit waiting area — representative photo",
-      "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
-    },
     "space-toothbrushes": {
       "src": "/images/photos/space-toothbrushes.jpg",
       "width": 1200,
       "height": 900,
       "alt": "Bamboo toothbrushes in a glass jar",
-      "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
-    },
-    "smile-mirror": {
-      "src": "/images/photos/smile-mirror.jpg",
-      "width": 1200,
-      "height": 900,
-      "alt": "Young woman smiling at a hand mirror",
       "status": "placeholder",
       "credit": "Photo: Unsplash (representative)"
     },
@@ -202,9 +162,57 @@
       "src": "/images/photos/smile-woman.jpg",
       "width": 1200,
       "height": 1400,
-      "alt": "Woman laughing with a natural smile",
+      "alt": "Young woman smiling outdoors",
       "status": "placeholder",
-      "credit": "Photo: Unsplash (representative)"
+      "credit": "Photo: Pexels (representative)"
+    },
+    "smile-young-woman": {
+      "src": "/images/photos/smile-young-woman.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Young woman in a blue saree, smiling",
+      "status": "placeholder",
+      "credit": "Photo: Pexels (representative)"
+    },
+    "smile-teen": {
+      "src": "/images/photos/smile-teen.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Smiling teenage girl waving",
+      "status": "placeholder",
+      "credit": "Photo: Pexels (representative)"
+    },
+    "smile-grandparents": {
+      "src": "/images/photos/smile-grandparents.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Grandparents laughing with their grandchild",
+      "status": "placeholder",
+      "credit": "Photo: Pexels (representative)"
+    },
+    "smile-elder": {
+      "src": "/images/photos/smile-elder.jpg",
+      "width": 1200,
+      "height": 900,
+      "alt": "Elderly man in an orange turban, smiling warmly",
+      "status": "placeholder",
+      "credit": "Photo: Pexels (representative)"
+    },
+    "clinic-treatment-rooms": {
+      "src": "/images/photos/clinic-treatment-rooms.jpg",
+      "width": 680,
+      "height": 315,
+      "alt": "The two treatment rooms at Sri Parvathi Dental Clinic, decorated with marigold garlands",
+      "status": "approved",
+      "objectPosition": "22% 50%"
+    },
+    "clinic-waiting-area": {
+      "src": "/images/photos/clinic-waiting-area.jpg",
+      "width": 680,
+      "height": 315,
+      "alt": "Waiting area at Sri Parvathi Dental Clinic, with a treatment room beyond",
+      "status": "approved",
+      "objectPosition": "58% 50%"
     }
   }
 }

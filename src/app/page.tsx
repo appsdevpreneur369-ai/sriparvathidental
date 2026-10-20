@@ -153,7 +153,7 @@ export default function HomePage() {
         <div className="container-site grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="relative order-2 lg:order-1">
             <div className="relative overflow-hidden rounded-[2rem] shadow-lift">
-              <Image src={about.src} alt={about.alt} width={about.width} height={about.height} sizes="(min-width:1024px) 45vw, 100vw" className="aspect-[5/4] w-full object-cover" />
+              <Image src={about.src} alt={about.alt} width={about.width} height={about.height} sizes="(min-width:1024px) 45vw, 100vw" className="aspect-[5/4] w-full object-cover" style={{ objectPosition: about.objectPosition }} />
             </div>
             <div className="absolute -bottom-6 -right-2 rounded-[1.5rem] bg-navy px-6 py-5 text-onDark shadow-lift sm:right-8">
               <span className="block font-heading text-4xl font-semibold text-cta">{fill(h.about.badgeValue)}</span>
@@ -337,7 +337,7 @@ export default function HomePage() {
               const img = getImage(g.image);
               return (
                 <li key={g.image} className={`reveal group relative overflow-hidden rounded-[1.5rem] ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
-                  <Image src={img.src} alt={img.alt} fill sizes={i === 0 ? '(min-width:1024px) 50vw, 100vw' : '(min-width:1024px) 25vw, 50vw'} className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <Image src={img.src} alt={img.alt} fill sizes={i === 0 ? '(min-width:1024px) 50vw, 100vw' : '(min-width:1024px) 25vw, 50vw'} className="object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: img.objectPosition }} />
                   <span className="absolute bottom-3 left-3 right-3 rounded-full bg-surface/90 px-3 py-1 text-xs font-semibold text-text backdrop-blur">{g.caption}</span>
                 </li>
               );
