@@ -28,10 +28,10 @@
     "e164": "+918954656789"
   },
   "whatsapp": {
-    "status": "placeholder",
-    "_note": "NOT CONFIRMED: we do not know whether +91 89546 56789 (or another number) takes WhatsApp. While this is a placeholder, every WhatsApp button is hidden and WhatsApp booking is off. Once the clinic confirms, set status to 'approved' (and the number) — the buttons appear automatically.",
-    "display": "+91 89546 56789",
-    "e164": "+918954656789"
+    "status": "approved",
+    "_note": "Confirmed by the account owner on 20 Oct 2026. A different number from the call number (phone): every WhatsApp button, the JSON-LD and the WhatsApp booking fallback use this one.",
+    "display": "+91 78939 36489",
+    "e164": "+917893936489"
   },
   "email": {
     "status": "placeholder",

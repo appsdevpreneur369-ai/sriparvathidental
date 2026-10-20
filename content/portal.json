@@ -1,11 +1,11 @@
 {
-  "_note": "Links to this clinic's ClinicFlow247 pages (patient sign-in/registration, staff login, booking page). SPDC is on ENTERPRISE (white-label) from day one: once enterprise.subdomain is set, every link and redirect moves to https://<subdomain>.clinicflow247.com — the clinic-branded tenant app. Until the subdomain is agreed (PENDING_ITEMS.md) the links use the shared portal path for this clinic's slug, which also shows SPDC branding once theme tokens are applied.",
+  "_note": "Links to this clinic's ClinicFlow247 pages (patient sign-in/registration, staff login, booking page). SPDC is on ENTERPRISE (white-label) from day one: once enterprise.subdomain is set, every link and redirect moves to https://<subdomain>.clinicflow247.com — the clinic-branded tenant app. The subdomain 'sriparvathi' was confirmed on 20 Oct 2026.",
   "status": "placeholder",
   "portalBaseUrl": "https://clinicflow247.com",
   "clinicSlug": "sri-parvathi-dental-clinic",
   "enterprise": {
-    "_note": "Proposed: 'sriparvathi' -> sriparvathi.clinicflow247.com. Left empty until the owner confirms the subdomain and the tenant app + load-balancer host rule exist.",
-    "subdomain": ""
+    "_note": "Confirmed by the account owner 20 Oct 2026: sriparvathi.clinicflow247.com. Production links use it (a NEXT_PUBLIC_PORTAL_BASE_URL override still wins on local/staging builds). The tenant app + load-balancer host rule + DNS must exist before a production deploy (needs APPROVED).",
+    "subdomain": "sriparvathi"
   },
   "paths": {
     "login": "/clinic/{slug}/login",

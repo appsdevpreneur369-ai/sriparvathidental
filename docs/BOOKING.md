@@ -16,10 +16,10 @@ Every **Book** button (header, hero, symptom chips, doctor card, treatment pages
 | --- | --- | --- |
 | `clinicflow` | Live slots from ClinicFlow247, SMS code, a real appointment via `POST /appointments/guest-book`, and the status the API returned. | API URL + clinic slug, clinic ACTIVE, the doctor matched, this site's origin in the API's CORS list |
 | `enquiry` | Sends a real lead (`POST /clinics/public/{slug}/leads`), worded as "Request sent … not a confirmed appointment yet". | API reachable |
-| `whatsapp` | Opens a pre-filled `wa.me` message. | An **approved** WhatsApp number in `clinic.json` (**not yet**) |
-| *(unavailable)* | "Online booking is not available right now … Nothing has been sent", plus a Call button (the phone is approved). | — |
+| `whatsapp` | Opens a pre-filled `wa.me` message. | An **approved** WhatsApp number in `clinic.json` (approved 20 Oct 2026) |
+| *(unavailable)* | "Online booking is not available right now … Nothing has been sent", plus a Call button. Only reached if WhatsApp is set back to a placeholder. | — |
 
-**SPDC today:** the WhatsApp number is unconfirmed, so WhatsApp is left out of the chain and `enquiry` is the last fallback. If the API itself is down, the visitor sees "not available" and the Call button. The e2e test checks this.
+**SPDC today:** the WhatsApp number **+91 78939 36489** was approved on 20 Oct 2026, so the full chain applies: `clinicflow` → `enquiry` → `whatsapp`. If the API itself is down, the visitor gets a pre-filled WhatsApp message to the clinic ("send it on WhatsApp … confirmed only when the clinic replies"), never a fake booking. The e2e test checks this. With a placeholder WhatsApp number, the same case shows "not available" plus Call (unit-tested).
 
 Build-time settings (local: `.env.local`; staging: Docker build args):
 
@@ -41,7 +41,7 @@ NEXT_PUBLIC_PORTAL_BASE_URL=<portal origin>   # sign-in / register links
 ## Tests
 
 - `npm test` covers the fallback order including the unconfirmed-WhatsApp rule, the health check with a stubbed `fetch`, enquiry never faking success, error mapping, popup rules (desktop-only, 12 s, excluded paths), validation, and the routing map.
-- `node scripts/qa/e2e-booking.mjs http://localhost:3300 qa/e2e` runs against the **local** stack only (see `docs/LOCAL_STACK.md`). It covers the auto-popup leading to a live booking with OTP, a repeat email giving the "already has a patient account" message, no second auto-open, no popup on phones, doctors API down falling back to enquiry, the whole API down giving "not available" plus Call, and the deep link skipping the doctor step.
+- `node scripts/qa/e2e-booking.mjs http://localhost:3300 qa/e2e` runs against the **local** stack only (see `docs/LOCAL_STACK.md`). It covers the auto-popup leading to a live booking with OTP, a repeat email giving the "already has a patient account" message, no second auto-open, no popup on phones, doctors API down falling back to enquiry, the whole API down giving the WhatsApp hand-off, and the deep link skipping the doctor step.
 
 ## Core behaviours worth knowing (ClinicFlow, not this repo)
 

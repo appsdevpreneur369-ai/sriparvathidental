@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Sri Parvathi Dental Clinic logo mark (designed 20 Oct 2026; approved by the account owner as the clinic logo).
+       A white tooth on the teal tile, a lotus (for Parvathi) cut into the crown, and a gold bindu in the crown's notch.
+       Master for `npm run brand`: header mark, favicon, app icons, OG image and the ClinicFlow white-label logo. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11909B"/>
+      <stop offset="1" stop-color="#08525A"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="976" height="976" rx="232" fill="url(#tile)"/>
+  <g transform="translate(512 530) scale(1.08) translate(-512 -530)">
+  <path fill="#FFFFFF" d="M512 300C470 262 410 236 352 240C262 246 214 318 222 406C228 476 262 520 280 590C298 660 304 730 326 790C340 828 392 830 404 790C424 724 440 640 512 640C584 640 600 724 620 790C632 830 684 828 698 790C720 730 726 660 744 590C762 520 796 476 802 406C810 318 762 246 672 240C614 236 554 262 512 300Z"/>
+  <g fill="#0E7C86">
+    <path d="M512 352C552 396 566 452 512 516C458 452 472 396 512 352Z"/>
+    <path d="M502 522C446 520 400 484 384 418C442 426 486 462 502 522Z"/>
+    <path d="M522 522C578 520 624 484 640 418C582 426 538 462 522 522Z"/>
+  </g>
+  <path d="M414 552C466 576 558 576 610 552" fill="none" stroke="#4FBF9F" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="512" cy="236" r="26" fill="#E9B44C"/>
+  </g>
+</svg>

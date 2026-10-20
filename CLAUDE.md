@@ -12,14 +12,14 @@ Status: **built and tested locally, not pushed, not deployed.** Open items: `PEN
 - **Read-only:** `D:\ClinicFlow`, `D:\DR-SINDHU`, `D:\SMSDC`. Local e2e uses a `git archive` copy of core in `.local-stack/` plus a throwaway Postgres (`docs/LOCAL_STACK.md`). Core bugs are reported, not patched here.
 - **Plan gate:** `content/plan.json` = `enterprise`. `src/lib/plan.ts` stops the site promising anything the plan doesn't include.
 - **Everything config-driven** from `/content` and zod-validated. Every record has `status: approved | placeholder`. Components never hard-code copy, colours, images, phone numbers or hours.
-- **Placeholders never become dead links.** WhatsApp and email are unconfirmed, so their buttons are hidden, they're left out of JSON-LD, and WhatsApp booking is off. The phone (from Google) is approved.
+- **Placeholders never become dead links.** A placeholder phone, WhatsApp or email hides its buttons and is left out of JSON-LD. Today the phone +91 89546 56789 (from Google) and **WhatsApp +91 78939 36489** (a separate number, owner 20 Oct 2026) are approved. The **email** and Dr. Ramakanth's **registration number** stay placeholders on purpose until the clinic sends them; swap steps are in `docs/EDITING.md`, and the schema rejects a fake value.
 - **Never invent** a phone, email, registration number, experience, reviews, ratings, awards, patient counts or prices. Doctors get an initials avatar until a real photo arrives (never stock). Stock photos are captioned "representative". Medical wording stays cautious.
 - **Booking never fakes success.** Order: `clinicflow` → `enquiry` → `whatsapp` (only once approved) → "not available" plus Call.
 - **Copy stays original** and doesn't reuse DR-SINDHU or SMSDC sentences (same town, duplicate-content risk). Brand and logo are SPDC's own.
 
 ## Stack and brand
 
-Next.js 14.2 App Router, TypeScript strict, Tailwind, next/font (**Fraunces** headings + **Plus Jakarta Sans** body), zod, vitest, lucide-react. It follows the DR-SINDHU and SMSDC site patterns.
+Next.js 14.2 App Router, TypeScript strict, Tailwind, next/font (**Fraunces** headings + **Plus Jakarta Sans** body), zod, vitest, lucide-react. Logo (approved 20 Oct 2026): `images/spdc-logo.svg`, a white tooth with a lotus on the teal tile and a gold bindu. `npm run brand` derives the header mark, favicon, app icons and OG image from it. Enterprise subdomain: `sriparvathi.clinicflow247.com` (`content/portal.json`). It follows the DR-SINDHU and SMSDC site patterns.
 
 Palette (`content/brand.json`): deep teal primary `#0E7C86`, mint `#9FE2C8`, navy text and footer `#0B2545`, gold CTA `#E9B44C` (background only, navy text on it), amber warning `#A34A08` (no red). `npm run contrast` passes every text pair at AA. The same colours feed the tenant `themeTokens`, so the portal matches the site.
 
@@ -51,5 +51,6 @@ In Git Bash, prefix scripts that take `/paths` with `MSYS_NO_PATHCONV=1`.
 7. [x] Local core stack + seed for every role; booking e2e 8/8; RBAC 193 pass / 2 observe (core IDOR, reported)
 8. [x] Docs: README, EDITING, BOOKING, LOCAL_STACK, E2E report, PENDING_ITEMS
 9. [x] Visual QA 360/768/1280 (0 overflow), keyboard 10/10, Lighthouse (SEO 100, A11y 100, mobile Perf 91–97), SEO audit 29 pages / 0 JSON-LD errors (`docs/seo-reports/2026-10-20`, `docs/screenshots`)
-10. [ ] First git commit (local only)
-11. [ ] Owner review, then **"APPROVED"**, then GitHub push, staging onboarding and deploy
+10. [x] First git commit (local only, `fdebc54`)
+11. [x] Owner's answers (20 Oct 2026): WhatsApp approved, logo + favicon designed, subdomain confirmed; email and registration number kept as placeholders with documented swap steps
+12. [ ] Owner review, then **"APPROVED"**, then GitHub push, staging onboarding and deploy

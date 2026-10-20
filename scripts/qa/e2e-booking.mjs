@@ -52,7 +52,7 @@ async function walk(page, prefix, { reason = 'Gums bleed when brushing', email, 
         const d = document.querySelector(sel);
         const h = d?.querySelector('h2')?.textContent ?? '';
         const alert = d?.querySelector('[role=alert]')?.textContent ?? '';
-        return /confirmed|Request sent|received/i.test(h) ? { heading: h } : alert ? { error: alert } : false;
+        return /confirmed|Request sent|received|on WhatsApp/i.test(h) ? { heading: h } : alert ? { error: alert } : false;
       },
       { timeout: 40000 },
       S,
@@ -114,7 +114,8 @@ async function walk(page, prefix, { reason = 'Gums bleed when brushing', email, 
   await ctx.close();
 }
 
-// 3) Whole API unreachable + WhatsApp not yet confirmed → honest "not available", call option, no fake success.
+// 3) Whole API unreachable → WhatsApp fallback (number approved 20 Oct 2026): a pre-filled wa.me message, never "booked".
+//    (With a placeholder WhatsApp number the same case shows "not available" + Call; covered by the unit tests.)
 {
   const ctx = await browser.createBrowserContext();
   const page = await ctx.newPage();
@@ -123,9 +124,10 @@ async function walk(page, prefix, { reason = 'Gums bleed when brushing', email, 
   page.on('request', (rq) => (/\/api\/clinicflow\/|localhost:8089/.test(rq.url()) ? rq.abort() : rq.continue()));
   await page.goto(`${base}/book?problem=toothache`, { waitUntil: 'load' });
   await wait(3500);
-  const text = await page.$eval('main', (m) => m.innerText);
-  await shot(page, '3-unavailable');
-  check('API down + no confirmed WhatsApp → "not available" with a Call option, never a success', /not available/i.test(text) && /Call/.test(text) && !/confirmed/i.test(text));
+  const r = await walk(page, '3-whatsapp', { reason: null, expectOtp: false, scope: 'main' });
+  const href = await page.$eval('main a[href^="https://wa.me/"]', (a) => a.href).catch(() => '');
+  await shot(page, '3-whatsapp');
+  check('API down → WhatsApp fallback: pre-filled message to +91 78939 36489, never a success', /on WhatsApp/i.test(r.heading ?? '') && !/confirmed/i.test(r.heading ?? '') && href.startsWith('https://wa.me/917893936489?text='), { ...r, href: href.slice(0, 40) });
   await ctx.close();
 }
 

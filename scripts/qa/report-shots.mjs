@@ -20,7 +20,10 @@ async function shoot(url, file, { width, height, full = false, mobile = false, p
   await page.evaluate(() => document.querySelectorAll('.reveal').forEach((e) => e.classList.add('is-visible')));
   await wait(900);
   if (before) await before(page);
-  await page.screenshot({ path: `${out}/${file}`, fullPage: full });
+  // Chrome tiles (repeats) captures taller than ~16384 device px; cap long pages instead of producing a broken image.
+  const maxCss = Math.floor(16000 / (mobile ? 2 : 1));
+  const tall = full && (await page.evaluate(() => document.documentElement.scrollHeight)) > maxCss;
+  await page.screenshot({ path: `${out}/${file}`, ...(tall ? { clip: { x: 0, y: 0, width, height: maxCss }, captureBeyondViewport: true } : { fullPage: full }) });
   await page.close();
 }
 

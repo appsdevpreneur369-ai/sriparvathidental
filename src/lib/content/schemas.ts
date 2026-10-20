@@ -41,7 +41,9 @@ export const ClinicSchema = z.object({
   }),
   phone: Contact,
   whatsapp: Contact,
-  email: z.object({ status: Status, value: z.string().min(1) }),
+  email: z
+    .object({ status: Status, value: z.string().min(1) })
+    .refine((e) => e.status !== 'approved' || /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(e.value), { message: 'an approved email must be a real address', path: ['value'] }),
   timezone: z.string().min(1),
   hours: z.object({
     _note: Note,
@@ -137,7 +139,8 @@ export const DoctorSchema = z.object({
   photo: z.string().nullable(),
   /** A second photo of the doctor (own photos only), shown on the profile page. */
   photoSecondary: z.string().nullable(),
-  registrationNumber: z.string(),
+  /** "" until confirmed (site shows "being confirmed"; the tenant file sends PENDING-VERIFICATION-<NAME>). */
+  registrationNumber: z.string().regex(/^(?!.*PENDING)[A-Za-z0-9/ .-]*$/i, 'leave empty until confirmed, or the real Dental Council number'),
   clinicflowDoctorId: z.string().nullable(),
   summary: z.string().min(1),
   bio: z.array(z.string().min(1)).min(1),

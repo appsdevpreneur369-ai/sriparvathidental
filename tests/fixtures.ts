@@ -51,7 +51,7 @@ export function bookingConfig(over: { baseUrl?: string; clinicSlug?: string; wha
       shortName: 'Sri Parvathi Dental',
       branchName: 'Sri Parvathi Dental — Tadepalli',
       address: 'First Floor, Perreddy Complex, Pathur Road Cross, Tadepalle',
-      whatsappDigits: over.whatsappDigits === undefined ? '918954656789' : over.whatsappDigits,
+      whatsappDigits: over.whatsappDigits === undefined ? '917893936489' : over.whatsappDigits,
       phoneDisplay: null,
       telHref: null,
     },

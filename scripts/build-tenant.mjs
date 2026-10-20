@@ -59,7 +59,7 @@ const tenant = {
     appTitle: enterprise ? clinic.name.value : null,
     logoUrl: null,
     faviconUrl: null,
-    _note_logo: 'Upload public/brand/logo-mark.png (PLACEHOLDER mark until the clinic sends its logo) and the favicon via the clinic admin API on the target environment, then set these URLs. Not uploaded by this generator.',
+    _note_logo: 'Clinic logo approved 20 Oct 2026. After onboarding, upload public/brand/logo-mark.png as type=logo and src/app/icon.png as type=favicon (POST /clinics/{id}/upload-image) on the target environment; that sets these URLs. Not uploaded by this generator.',
     themeTokens: enterprise
       ? {
           primaryColor: c.primary,
@@ -88,8 +88,8 @@ const tenant = {
     socialLinks: approved(clinic.whatsapp) ? { whatsapp: `https://wa.me/${clinic.whatsapp.e164.replace(/\D/g, '')}` } : {},
     whatsappNumber: approved(clinic.whatsapp) ? clinic.whatsapp.e164 : null,
     _note_whatsapp: approved(clinic.whatsapp) ? undefined : 'WhatsApp number not confirmed yet -> null.',
-    customDomain: null,
-    _note_customDomain: `Enterprise subdomain proposed "sriparvathi" (sriparvathi.clinicflow247.com) -- owner to confirm; then set content/portal.json enterprise.subdomain and add the tenant app + LB host rule (D:\\ClinicFlow\\CLAUDE.md).`,
+    customDomain: portal.enterprise.subdomain ? `${portal.enterprise.subdomain}.clinicflow247.com` : null,
+    _note_customDomain: `From content/portal.json enterprise.subdomain (confirmed 20 Oct 2026). The tenant app + LB host rule + DNS must exist on the target environment (D:\\ClinicFlow\\CLAUDE.md) -- needs the owner's APPROVED.`,
     coverPhotoUrl: null,
     description: clinic.description.value,
   },
@@ -125,7 +125,7 @@ const tenant = {
   _note_treatments: `${services.categories.length} categories from content/services.json; sub-treatments folded into the description (no sub-treatment entity in core). No prices. PLACEHOLDER until the clinic confirms its services.`,
   contentPages: [],
   flags: [
-    'SPDC: plan ENTERPRISE (white label) -- theme tokens and appTitle applied; logo/favicon still to upload (placeholder mark).',
+    'SPDC: plan ENTERPRISE (white label) -- theme tokens and appTitle applied; upload the approved logo (public/brand/logo-mark.png) and favicon (src/app/icon.png) after onboarding.',
     `SPDC: doctor(s) use placeholder mciRegistrationNumber PENDING-VERIFICATION-<NAME>; replace with the State Dental Council number before any real e-prescription.`,
     'SPDC: Dr. Ramakanth has placeholder lastName "MDS" (API requires a surname).',
     'SPDC: clinic email and WhatsApp number are not confirmed (null).',

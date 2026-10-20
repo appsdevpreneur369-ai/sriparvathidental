@@ -3,7 +3,7 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import { describe, expect, it } from 'vitest';
 import { checkReferences, ContentError, FILES, parseAll, parseFile, type RawContent } from '@/lib/content/load';
-import { ArticleFrontmatter, ClinicSchema, LegalFrontmatter } from '@/lib/content/schemas';
+import { ArticleFrontmatter, ClinicSchema, DoctorSchema, LegalFrontmatter } from '@/lib/content/schemas';
 
 const dir = path.join(__dirname, '..', 'content');
 const read = (f: string) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
@@ -106,5 +106,20 @@ describe('content schema', () => {
     expect(home.beforeAfter.items).toEqual([]);
     const services = JSON.stringify(read('services.json'));
     expect(services).not.toMatch(/₹|Rs\.?\s?\d|INR/);
+  });
+});
+
+describe('placeholders waiting for the clinic (email, registration number)', () => {
+  it('email: placeholder text is fine; an approved email must be a real address', () => {
+    const clinic = read('clinic.json');
+    expect(clinic.email.status).toBe('placeholder');
+    expect(ClinicSchema.safeParse({ ...clinic, email: { status: 'approved', value: 'email to be confirmed' } }).success).toBe(false);
+    expect(ClinicSchema.safeParse({ ...clinic, email: { status: 'approved', value: 'care@sriparvathidental.in' } }).success).toBe(true);
+  });
+  it('registration number: empty until confirmed, never the PENDING marker, accepts a real number', () => {
+    const d = read('doctors.json').doctors[0];
+    expect(d.registrationNumber).toBe('');
+    expect(DoctorSchema.safeParse({ ...d, registrationNumber: 'PENDING-VERIFICATION-RAMAKANTH' }).success).toBe(false);
+    expect(DoctorSchema.safeParse({ ...d, registrationNumber: 'A-12345' }).success).toBe(true);
   });
 });

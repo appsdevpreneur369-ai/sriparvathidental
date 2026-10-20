@@ -83,8 +83,14 @@ if (!clinic) throw new Error('SPDC clinic not found after import');
 const clinicId = clinic.id;
 
 // ---------- 2. Super admin: activate (the importer leaves new clinics PENDING) ----------
-must(await call('PUT', `/clinics/${clinicId}`, sa, { name: tenant.clinic.name, status: 'ACTIVE', customDomain: LOCAL_DOMAIN }), 'activate clinic', 200);
-log('super admin: clinic ACTIVE + local white-label domain', true, `${clinicId} → ${LOCAL_DOMAIN}`);
+// Logo + favicon: core's upload-image endpoint writes to GCS (none locally), so point the URLs at the site's own copies.
+const SITE = process.env.LOCAL_SITE_URL || 'http://localhost:3300';
+must(
+  await call('PUT', `/clinics/${clinicId}`, sa, { name: tenant.clinic.name, status: 'ACTIVE', customDomain: LOCAL_DOMAIN, logoUrl: `${SITE}/brand/logo-mark.png`, faviconUrl: `${SITE}/icon.png` }),
+  'activate clinic',
+  200,
+);
+log('super admin: clinic ACTIVE + local white-label domain + logo/favicon', true, `${clinicId} → ${LOCAL_DOMAIN}`);
 // Dental workflow (treatment plans, estimates, walk-in tokens) is a per-clinic switch, in no plan by default.
 must(await call('PATCH', `/clinics/${clinicId}/features`, sa, { overrides: { dental_suite: true } }), 'dental suite', 200);
 log('super admin: dental suite switched on for the clinic', true);

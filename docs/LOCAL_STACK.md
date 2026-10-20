@@ -35,7 +35,7 @@ bash scripts/local-stack/stop.sh        # stops :3300, :3301, :8089 and the thro
 ## What `seed.mjs` does (through the real API, as the UI would)
 
 1. Runs core's tenant importer with `tenant/sri-parvathi.json`, which creates the clinic, owner, branch, doctor and theme tokens.
-2. Signs in as **super admin**, sets the clinic **ACTIVE** (new clinics start PENDING), maps the white-label host `spdc.localhost`, and switches on the dental suite.
+2. Signs in as **super admin**, sets the clinic **ACTIVE** (new clinics start PENDING), maps the white-label host `spdc.localhost`, points the clinic logo and favicon at the site's `/brand/logo-mark.png` and `/icon.png` (core's upload endpoint needs GCS), and switches on the dental suite.
 3. Signs in as **clinic admin** and sets Dr. Ramakanth's slot length (20 min) and weekly schedule from `content/clinic.json` hours.
 4. Registers two test **patients** and books and completes sample visits, so the doctor and patient dashboards have data.
 5. Writes `.local-stack/test-logins.json` (local test logins, `.test` emails, never valid anywhere else) and `.local-stack/seed-report.json`.

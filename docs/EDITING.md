@@ -13,13 +13,13 @@ Every record carries `"status": "approved" | "placeholder"`. With `NEXT_PUBLIC_S
 | I want to change… | File | Notes |
 | --- | --- | --- |
 | Phone | `content/clinic.json` → `phone` | `e164` must be `+91` plus a 10-digit mobile. Verified from the Google listing on 20 Oct 2026. |
-| WhatsApp | `clinic.json` → `whatsapp` | **Placeholder until the clinic confirms the WhatsApp number.** While it's a placeholder, every WhatsApp button is hidden and WhatsApp booking is off. Set `status: "approved"` and the buttons appear everywhere (top strip, mobile dock, contact, booking fallback). |
-| Email | `clinic.json` → `email` | Set `value` and `status: "approved"`. The email link then appears on Contact, in the footer and in JSON-LD. |
+| WhatsApp | `clinic.json` → `whatsapp` | **+91 78939 36489**, approved 20 Oct 2026. It's a different number from the call number. It drives every WhatsApp button (top strip, mobile dock, contact), JSON-LD and the booking fallback. Setting `status: "placeholder"` hides them all again. |
+| Email | `clinic.json` → `email` | **Placeholder for now.** See "Swapping in the clinic email or registration number" below. |
 | Address / map pin | `clinic.json` → `address`, `maps` | `maps.geo` feeds the schema.org `GeoCoordinates`. `shareUrl` is the place's stable `?cid=` link. |
 | Opening hours | `clinic.json` → `hours.days` | Each day can have several sessions. A single session prints as "9:30 AM – 9:30 PM"; split sessions print as "Morning … & Evening …". One formatter (`src/lib/hours.ts`) feeds the top strip, hero chip, footer, Contact, FAQs, doctor pages, JSON-LD and the tenant file. |
 | Google rating | `clinic.json` → `google` | Copy the rating and review count by hand and update `checkedOn`. Shown with that date; **never** emitted as `aggregateRating` (Google treats self-served review markup on local businesses as spam). |
 | Colours / fonts | `content/brand.json` | Then run `npm run contrast` (must pass) and `npm run brand`. Fonts must be registered in `src/lib/theme.ts` (Fraunces and Plus Jakarta Sans today). Gold (`cta`) is a background only, with navy text on it. |
-| Logo | Put the clinic's master in `images/`, point `images.json → logo.source.src` at it, then run `npm run brand` | Rebuilds the header mark, favicon, app icons and the social-share image. Today's mark is a **placeholder** we designed. |
+| Logo | `images/spdc-logo.svg` (master), then run `npm run brand` | The clinic logo (approved 20 Oct 2026): a white tooth with a lotus on the teal tile and a gold bindu. `npm run brand` rebuilds the header mark, **favicon**, app icons and the social-share image from it, so they always match. The same `public/brand/logo-mark.png` and `src/app/icon.png` are uploaded to ClinicFlow as the white-label logo and favicon. |
 | Photos | `content/images.json` | Add the file to `public/images/photos/`, then update `src`, `width`, `height` and `alt`, set `status: "approved"` and **remove `credit`**. Every current photo is representative stock (Unsplash). A photo without `credit` is treated as the clinic's own, so only then may it appear in the gallery JSON-LD or on a doctor card. |
 | Gallery | `content/gallery.json` | Captions currently say "(representative photo)". Remove that once real photos are in. |
 | Doctors | `content/doctors.json` | See "Adding or renaming a doctor" below. `photo` takes an image id, or `null` for the initials avatar. |
@@ -34,6 +34,28 @@ Every record carries `"status": "approved" | "placeholder"`. With `NEXT_PUBLIC_S
 | Social media | `content/social.json` | An empty `url` gives a greyed-out, non-clickable icon and leaves it out of `sameAs`. |
 | Booking popup, consent, messages | `content/booking.json` | See `docs/BOOKING.md`. |
 | ClinicFlow portal links / subdomain | `content/portal.json` | Set `enterprise.subdomain` once agreed (proposed: `sriparvathi`). See `docs/WHITE_LABEL.md`. |
+
+## Swapping in the clinic email or registration number
+
+These two are deliberately kept as placeholders until the clinic sends them. Each one is a single edit, and the build refuses an obviously wrong value.
+
+**Clinic email**
+
+1. In `content/clinic.json`, set `"email": { "status": "approved", "value": "<real address>" }`. Until then the value is "email to be confirmed" and every email link stays hidden.
+2. Run `npm run tenant`. The tenant file's `clinic.email` changes from `null` to the address.
+3. Run `npm test && npm run build`. An approved value that isn't a real address fails the build.
+4. If the clinic is already onboarded on ClinicFlow, also set the email there: clinic admin → **Clinic → Profile → Email** (or `PUT /clinics/{id}` with `email`).
+
+The email then appears on Contact, in the footer and in JSON-LD.
+
+**Dr. Ramakanth's State Dental Council registration number**
+
+1. In `content/doctors.json`, set `"registrationNumber": "<number>"`. Leave it `""` until it's confirmed. The build rejects anything containing `PENDING`.
+2. Run `npm run tenant`. The tenant file's `mciRegistrationNumber` changes from `PENDING-VERIFICATION-RAMAKANTH` to the number.
+3. Run `npm test && npm run build`. The doctor page now shows "Dental Council registration no. …" in place of "being confirmed".
+4. If the clinic is already onboarded on ClinicFlow, also update the doctor there: clinic admin → **Doctors** → Dr. Ramakanth → registration number (or `PUT /clinics/{id}/doctors/{doctorId}` with `mciRegistrationNumber`). **Do this before he issues any real e-prescription**, because the number is printed on the Rx PDF.
+
+Then tick the item off in `PENDING_ITEMS.md`.
 
 ## Adding or renaming a doctor
 

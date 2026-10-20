@@ -92,18 +92,18 @@ describe('resolveBookingService (stubbed network)', () => {
     expect(() => new WhatsAppBookingService(bookingConfig({ whatsappDigits: null }))).toThrow(BookingError);
     const r = await new WhatsAppBookingService(bookingConfig()).book(req);
     expect(r.kind).toBe('whatsapp');
-    expect(r.kind === 'whatsapp' && r.href).toMatch(/^https:\/\/wa\.me\/918954656789\?text=/);
+    expect(r.kind === 'whatsapp' && r.href).toMatch(/^https:\/\/wa\.me\/917893936489\?text=/);
   });
 });
 
 describe('contact placeholder rule', () => {
-  it('approved phone → call; WhatsApp not yet confirmed → no wa.me link; placeholder email → no mailto', () => {
+  it('approved phone → call; approved WhatsApp (its own number) → wa.me link; placeholder email → no mailto', () => {
     const ch = contactChannels(content.clinic);
     expect(ch.call?.href).toBe('tel:+918954656789');
-    expect(ch.whatsapp).toBeNull();
+    expect(ch.whatsapp?.digits).toBe('917893936489');
     expect(ch.email).toBeNull();
-    const confirmed = contactChannels({ ...content.clinic, whatsapp: { ...content.clinic.whatsapp, status: 'approved' } });
-    expect(confirmed.whatsapp?.digits).toBe('918954656789');
+    const unconfirmed = contactChannels({ ...content.clinic, whatsapp: { ...content.clinic.whatsapp, status: 'placeholder' } });
+    expect(unconfirmed.whatsapp).toBeNull();
   });
   it('placeholder or fake-looking numbers never become links', () => {
     const fake = { ...content.clinic, phone: { status: 'placeholder', display: '+91 XXXXX XXXXX', e164: '+91XXXXXXXXXX' }, whatsapp: { status: 'approved', display: 'x', e164: '+91XXXXXXXXXX' } };

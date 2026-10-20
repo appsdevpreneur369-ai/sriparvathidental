@@ -1,16 +1,16 @@
 {
-  "_note": "Every image the site uses, by id. Components never reference /public paths directly. ALL photos are REPRESENTATIVE stock images (Unsplash License, content/photo-credits.json, field credit) until the clinic sends its own (PENDING_ITEMS.md). The logo mark is a PLACEHOLDER designed by the web team.",
+  "_note": "Every image the site uses, by id. Components never reference /public paths directly. ALL photos are REPRESENTATIVE stock images (Unsplash License, content/photo-credits.json, field credit) until the clinic sends its own (PENDING_ITEMS.md). The logo mark is the clinic's logo (designed by the web team, approved by the account owner 20 Oct 2026).",
   "logo": {
     "mark": {
       "src": "/brand/logo-mark.png",
       "width": 512,
       "height": 512,
       "alt": "Sri Parvathi Dental Clinic logo",
-      "status": "placeholder"
+      "status": "approved"
     },
     "source": {
-      "src": "images/spdc-logo-PLACEHOLDER.svg",
-      "_note": "Placeholder mark (tooth outline on a teal tile). Replace with the clinic logo master, then npm run brand."
+      "src": "images/spdc-logo.svg",
+      "_note": "Clinic logo master: white tooth with a lotus on the teal tile, gold bindu. npm run brand builds the header mark, favicon, app icons and OG image from it; the same PNG is uploaded as the ClinicFlow white-label logo + favicon."
     }
   },
   "images": {
@@ -19,7 +19,7 @@
       "width": 1200,
       "height": 630,
       "alt": "Sri Parvathi Dental Clinic, Pathur Road Cross, Tadepalle",
-      "status": "placeholder"
+      "status": "approved"
     },
     "hero-family": {
       "src": "/images/photos/hero-family.jpg",
