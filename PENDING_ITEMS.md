@@ -25,6 +25,6 @@ Last updated 20 Oct 2026. Everything below is on the site as a **placeholder** (
 
 ## Blockers outside the clinic (ClinicFlow team)
 
-- **Core security fix:** `GET /appointments/{id}/history` is readable by other patients and by other clinics' doctors (`docs/E2E_2026-10-20.md` §3). This must be fixed before go-live.
-- Core shows the clinic favicon only after sign-in (`DashboardShell.tsx`). Public portal pages keep ClinicFlow's favicon.
+- **Fixed on staging 20 Oct 2026, production pending:** appointment history readable by other patients / other clinics' doctors (api `765f70c`, staging `clinicflow-api-staging-00096-9sh`); WalkWell physiotherapy copy and Specialties menu shown on every clinic's portal pages (fe `3a4c03f`, staging `clinicflow-frontend-staging-00100-9gz`). Both must reach production before SPDC goes live there.
+- Google sign-in on the staging portal fails ("origin not allowed for this client ID"): add the staging portal origin to the OAuth client in Google Cloud console.
 - Core `HEAD` fails `next build` lint, so the local portal is built with `--no-lint`.
