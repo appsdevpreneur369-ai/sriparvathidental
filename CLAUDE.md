@@ -4,7 +4,7 @@ Public website for **Sri Parvathi Dental Clinic**, First Floor, Perreddy Complex
 
 **Delivery model (owner's decision, 20 Oct 2026): website + core tenant.** This repo is the public site plus the generated tenant file `tenant/sri-parvathi.json`. Every role and workflow (SUPER_ADMIN, CLINIC_ADMIN, DOCTOR, PATIENT) comes from ClinicFlow core, branded via the Enterprise theme tokens, logo and appTitle. **Never fork core** for SPDC: `D:\ClinicFlow\CLAUDE.md` forbids per-tenant codebases.
 
-Status: **built and tested locally; pushed to GitHub on 20 Oct 2026** (https://github.com/appsdevpreneur369-ai/sriparvathidental, `main`, at the owner's request). **Not deployed.** Open items: `PENDING_ITEMS.md`. Test report: `docs/E2E_2026-10-20.md`.
+Status: pushed to GitHub (https://github.com/appsdevpreneur369-ai/sriparvathidental, `main`); **on staging since 2026-10-20** (owner APPROVED). Not in production. Open items: `PENDING_ITEMS.md`. Test report: `docs/E2E_2026-10-20.md`.
 
 ## Hard rules
 
@@ -55,3 +55,33 @@ In Git Bash, prefix scripts that take `/paths` with `MSYS_NO_PATHCONV=1`.
 11. [x] Owner's answers (20 Oct 2026): WhatsApp approved, logo + favicon designed, subdomain confirmed; email and registration number kept as placeholders with documented swap steps
 12. [x] GitHub push to `appsdevpreneur369-ai/sriparvathidental` (20 Oct 2026, owner's request)
 13. [ ] **"APPROVED"**, then staging onboarding (tenant file, logo/favicon upload, subdomain tenant app + LB rule + DNS) and deploy
+
+## Deployments
+
+Manual, same as the DR-SINDHU and SMSDC sites: build the image locally, push to Artifact Registry, `gcloud run deploy`. Never touch other services, `clinicflow-lb`, certs or DNS without the owner's yes.
+
+| Item | Value |
+| --- | --- |
+| GCP | project `sincere-stock-499113-f1`, region `asia-south1` |
+| Image | `asia-south1-docker.pkg.dev/sincere-stock-499113-f1/clinicflow/spdc-frontend:<git short SHA>` |
+| Staging service | `spdc-frontend-staging`: 256Mi, 1 CPU, min-instances 0, unauthenticated, port 3000 |
+| Staging URL | https://spdc-frontend-staging-1071497363324.asia-south1.run.app |
+| Staging build args | `NEXT_PUBLIC_SITE_ENV=staging`, `NEXT_PUBLIC_SHOW_PLACEHOLDER_BADGES=true`, `NEXT_PUBLIC_NOINDEX=true`, `NEXT_PUBLIC_SITE_URL=<staging URL>`, `NEXT_PUBLIC_CLINICFLOW_API_URL=https://clinicflow-api-staging-1071497363324.asia-south1.run.app/api/v1`, `NEXT_PUBLIC_CLINICFLOW_CLINIC_SLUG=sri-parvathi-dental-clinic`, `NEXT_PUBLIC_BOOKING_OTP_HINT=123456`, `NEXT_PUBLIC_PORTAL_BASE_URL=https://clinicflow-frontend-staging-1071497363324.asia-south1.run.app` |
+| Staging clinic | `python scripts/staging/setup-staging.py --admin-email <super admin>` (run by a super admin; password prompted, never stored). Imports without `customDomain` (production-only host). |
+| Staging API CORS | This origin must be in `APP_CORS_ALLOWEDORIGINS` of `clinicflow-api-staging` for live booking from the browser. |
+
+History (staging):
+
+| Date | Commit / image tag | Revision | Notes |
+| --- | --- | --- | --- |
+| 2026-10-20 | `bf57d53` | `spdc-frontend-staging-00001-k6f` | First deploy after the owner's APPROVED. 15 pages 200, `/login` + `/register` 307 to the staging portal, 404 page, noindex header + robots Disallow, no ERROR logs. |
+
+Redeploy staging (all NEXT_PUBLIC_* values are baked in at build time):
+
+```bash
+SHA=$(git rev-parse --short HEAD)
+IMG=asia-south1-docker.pkg.dev/sincere-stock-499113-f1/clinicflow/spdc-frontend:$SHA
+docker build --build-arg NEXT_PUBLIC_SITE_ENV=staging --build-arg NEXT_PUBLIC_SHOW_PLACEHOLDER_BADGES=true --build-arg NEXT_PUBLIC_NOINDEX=true --build-arg NEXT_PUBLIC_SITE_URL=https://spdc-frontend-staging-1071497363324.asia-south1.run.app --build-arg NEXT_PUBLIC_CLINICFLOW_API_URL=https://clinicflow-api-staging-1071497363324.asia-south1.run.app/api/v1 --build-arg NEXT_PUBLIC_CLINICFLOW_CLINIC_SLUG=sri-parvathi-dental-clinic --build-arg NEXT_PUBLIC_BOOKING_OTP_HINT=123456 --build-arg NEXT_PUBLIC_PORTAL_BASE_URL=https://clinicflow-frontend-staging-1071497363324.asia-south1.run.app -t $IMG .
+docker push $IMG
+gcloud run deploy spdc-frontend-staging --project sincere-stock-499113-f1 --region asia-south1 --image $IMG
+```
