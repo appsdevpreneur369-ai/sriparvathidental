@@ -75,6 +75,7 @@ History (staging):
 | Date | Commit / image tag | Revision | Notes |
 | --- | --- | --- | --- |
 | 2026-10-20 | `bf57d53` | `spdc-frontend-staging-00001-k6f` | First deploy after the owner's APPROVED. 15 pages 200, `/login` + `/register` 307 to the staging portal, 404 page, noindex header + robots Disallow, no ERROR logs. |
+| 2026-10-20 | (ClinicFlow API, env only) | `clinicflow-api-staging-00095-8ts` | Added this origin to `APP_CORS_ALLOWEDORIGINS` (rollback `00094-xgm`). Verified: SPDC, DRSDC, SMSDC origins allowed, unknown origin refused, API 200, no ERROR logs. |
 
 Redeploy staging (all NEXT_PUBLIC_* values are baked in at build time):
 
