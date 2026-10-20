@@ -12,8 +12,8 @@ Every record carries `"status": "approved" | "placeholder"`. With `NEXT_PUBLIC_S
 
 | I want to change… | File | Notes |
 | --- | --- | --- |
-| Phone | `content/clinic.json` → `phone` | `e164` must be `+91` plus a 10-digit mobile. Verified from the Google listing on 20 Oct 2026. |
-| WhatsApp | `clinic.json` → `whatsapp` | **+91 78939 36489**, approved 20 Oct 2026. It's a different number from the call number. It drives every WhatsApp button (top strip, mobile dock, contact), JSON-LD and the booking fallback. Setting `status: "placeholder"` hides them all again. |
+| Phone | `content/clinic.json` → `phone` | **+91 78939 36489**, the same number as WhatsApp (owner, 20 Oct 2026). `e164` must be `+91` plus a 10-digit mobile. The Google listing still shows 089546 56789 and should be updated to match. |
+| WhatsApp | `clinic.json` → `whatsapp` | **+91 78939 36489**, approved 20 Oct 2026. It's the same number as the call number. It drives every WhatsApp button (top strip, mobile dock, contact), JSON-LD and the booking fallback. Setting `status: "placeholder"` hides them all again. |
 | Email | `clinic.json` → `email` | **Placeholder for now.** See "Swapping in the clinic email or registration number" below. |
 | Address / map pin | `clinic.json` → `address`, `maps` | `maps.geo` feeds the schema.org `GeoCoordinates`. `shareUrl` is the place's stable `?cid=` link. |
 | Opening hours | `clinic.json` → `hours.days` | Each day can have several sessions. A single session prints as "9:30 AM – 9:30 PM"; split sessions print as "Morning … & Evening …". One formatter (`src/lib/hours.ts`) feeds the top strip, hero chip, footer, Contact, FAQs, doctor pages, JSON-LD and the tenant file. |

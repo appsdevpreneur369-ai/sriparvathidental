@@ -93,7 +93,7 @@ describe('content schema', () => {
     const c = read('clinic.json');
     expect(c.name.value).toBe('Sri Parvathi Dental Clinic');
     expect(c.address.postalCode).toBe('522501');
-    expect(c.phone.e164).toBe('+918954656789');
+    expect(c.phone.e164).toBe('+917893936489');
     expect(c.maps.geo).toEqual({ lat: 16.4709375, lng: 80.6154375 });
   });
 

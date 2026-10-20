@@ -5,7 +5,7 @@ Last updated 20 Oct 2026. Everything below is on the site as a **placeholder** (
 | # | Item | Why it matters | Current placeholder | Where it goes |
 | --- | --- | --- | --- | --- |
 | 1 | **Clinic email** (kept as a placeholder on purpose) | Contact page, footer, JSON-LD, ClinicFlow clinic record | Hidden; `null` in the tenant file | `clinic.json → email`. Steps: EDITING.md → "Swapping in the clinic email or registration number" |
-| 2 | **Confirm the phone** +91 89546 56789 is the one patients should call (taken from Google) | Call buttons everywhere | Shown (approved from Google) | `clinic.json → phone` |
+| 2 | **Update the Google Business listing phone** from 089546 56789 to **+91 78939 36489** (now used for calls and WhatsApp) | Google and the website must show the same number (local SEO, fewer wrong calls) | Website already uses the new number | Google Business Profile (clinic owner) |
 | 3 | **Dr. Ramakanth's surname, MDS specialty branch, years of experience** | Doctor page; core requires a surname (stored as "Ramakanth MDS" for now) | "Dr. Ramakanth, MDS"; no experience shown | `content/doctors.json` |
 | 4 | **Dr. Ramakanth's State Dental Council registration number** (kept as a placeholder on purpose) | **Required before any real e-prescription** (printed on the legal Rx PDF) | `PENDING-VERIFICATION-RAMAKANTH` | `doctors.json → registrationNumber`. Steps: EDITING.md → same section |
 | 5 | **Other dentists / visiting specialists** — especially for implants and braces/aligners | Routing, treatment pages, booking ("choose your doctor" appears automatically with 2+) | Everything goes to Dr. Ramakanth for a first consultation, with a note | `doctors.json`, `services.json`, `routing.json` |
@@ -21,7 +21,7 @@ Last updated 20 Oct 2026. Everything below is on the site as a **placeholder** (
 | 15 | **Social media profiles** | Footer, `sameAs` | Greyed-out icons | `content/social.json` |
 | 16 | Before/after photos (optional; real and consented only) | Home page | Section hidden | `home.json → beforeAfter` |
 
-**Already confirmed (20 Oct 2026):** clinic name; address (First Floor, Perreddy Complex, Pathur Road Cross, Tadepalle 522501) and map pin; **WhatsApp +91 78939 36489** (separate from the call number); **clinic logo + favicon** (our design, `images/spdc-logo.svg`); **Enterprise subdomain `sriparvathi.clinicflow247.com`** (tenant app, LB host rule and DNS still to be created on deploy, after APPROVED); hours from Google (Mon–Sat 9:30 AM–9:30 PM, Sun 10 AM–2 PM); phone from Google; Google rating (dated); plan **ENTERPRISE (white label)**; Dr. Ramakanth, MDS leads the clinic.
+**Already confirmed (20 Oct 2026):** clinic name; address (First Floor, Perreddy Complex, Pathur Road Cross, Tadepalle 522501) and map pin; **+91 78939 36489 for both calls and WhatsApp**; **clinic logo + favicon** (our design, `images/spdc-logo.svg`); **Enterprise subdomain `sriparvathi.clinicflow247.com`** (tenant app, LB host rule and DNS still to be created on deploy, after APPROVED); hours from Google (Mon–Sat 9:30 AM–9:30 PM, Sun 10 AM–2 PM); Google rating (dated); plan **ENTERPRISE (white label)**; Dr. Ramakanth, MDS leads the clinic.
 
 ## Blockers outside the clinic (ClinicFlow team)
 

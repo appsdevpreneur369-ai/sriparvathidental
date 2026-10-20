@@ -23,13 +23,13 @@
   },
   "phone": {
     "status": "approved",
-    "_note": "From the clinic's Google Business listing (shown there as 089546 56789), checked 20 Oct 2026. Ask the clinic to confirm it is the number they want on the website.",
-    "display": "+91 89546 56789",
-    "e164": "+918954656789"
+    "_note": "Owner's decision (20 Oct 2026): calls go to the same number as WhatsApp. The Google Business listing still shows 089546 56789; update it to this number so the website and Google match (PENDING_ITEMS.md).",
+    "display": "+91 78939 36489",
+    "e164": "+917893936489"
   },
   "whatsapp": {
     "status": "approved",
-    "_note": "Confirmed by the account owner on 20 Oct 2026. A different number from the call number (phone): every WhatsApp button, the JSON-LD and the WhatsApp booking fallback use this one.",
+    "_note": "Confirmed by the account owner on 20 Oct 2026. The same number is used for calls (phone). Every WhatsApp button, the JSON-LD and the WhatsApp booking fallback use it.",
     "display": "+91 78939 36489",
     "e164": "+917893936489"
   },

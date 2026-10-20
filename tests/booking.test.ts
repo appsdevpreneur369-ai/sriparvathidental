@@ -97,9 +97,9 @@ describe('resolveBookingService (stubbed network)', () => {
 });
 
 describe('contact placeholder rule', () => {
-  it('approved phone → call; approved WhatsApp (its own number) → wa.me link; placeholder email → no mailto', () => {
+  it('approved phone → call; approved WhatsApp (same number) → wa.me link; placeholder email → no mailto', () => {
     const ch = contactChannels(content.clinic);
-    expect(ch.call?.href).toBe('tel:+918954656789');
+    expect(ch.call?.href).toBe('tel:+917893936489');
     expect(ch.whatsapp?.digits).toBe('917893936489');
     expect(ch.email).toBeNull();
     const unconfirmed = contactChannels({ ...content.clinic, whatsapp: { ...content.clinic.whatsapp, status: 'placeholder' } });
