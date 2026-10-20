@@ -54,3 +54,6 @@ docs/seo-reports/**/*.report.json
 
 # local ClinicFlow stack for e2e (copied from D:\ClinicFlow HEAD; never committed)
 /.local-stack/
+
+# python
+__pycache__/
