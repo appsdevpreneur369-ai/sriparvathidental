@@ -1,4 +1,6 @@
-// TEST-ONLY end-to-end booking on the website against the LOCAL ClinicFlow stack (never staging/production).
+// TEST-ONLY end-to-end booking on the website against the LOCAL stack or STAGING (never production).
+// Staging is safe for this because SMS and WhatsApp are in dry-run there and test OTPs are allowed (checked 20 Oct 2026);
+// test patients use @spdc.test emails (undeliverable) and phones in the dummy range 90000111xx.
 // Usage: node scripts/qa/e2e-booking.mjs http://localhost:3300 qa/e2e
 // Needs the site built/run with .env.local (NEXT_PUBLIC_CLINICFLOW_API_URL=http://localhost:8089/api/v1,
 // NEXT_PUBLIC_CLINICFLOW_CLINIC_SLUG=sri-parvathi-dental-clinic) and the local API with SMS in dry-run (OTP 123456).
@@ -15,6 +17,8 @@ const check = (scenario, pass, detail = {}) => {
   console.log(`${pass ? 'PASS' : 'FAIL'}  ${scenario}`);
 };
 const stamp = Date.now();
+if (/clinicflow247\.com|clinicflow-frontend-\d|clinicflow-api-\d/.test(base)) throw new Error(`Refusing to run against production: ${base}`);
+let phoneSeq = Math.floor(Math.random() * 90);
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 const inDialog = (scope) => (scope === 'main' ? 'main' : '[role=dialog]');
 const click = async (page, text, scope) => (await page.waitForSelector(`${inDialog(scope)} ::-p-text(${text})`, { timeout: 25000 })).click();
@@ -37,7 +41,7 @@ async function walk(page, prefix, { reason = 'Gums bleed when brushing', email, 
     await wait(400);
     await page.type('#bk-name', 'Test Patient');
     // A fresh number per booking: core matches an existing patient by phone before it checks the email.
-    await page.type('#bk-phone', phone ?? `9${String(Math.floor(Math.random() * 1e9)).padStart(9, '0')}`);
+    await page.type('#bk-phone', phone ?? `90000111${String(10 + (phoneSeq++ % 90)).padStart(2, '0')}`);
     await page.type('#bk-email', email ?? `e2e+${stamp}-${prefix}@spdc.test`);
     await page.click(`${S} input[type=checkbox]`);
     await page.click(`${S} button[type=submit]`);
@@ -121,7 +125,7 @@ async function walk(page, prefix, { reason = 'Gums bleed when brushing', email, 
   const page = await ctx.newPage();
   await page.setViewport({ width: 1280, height: 900 });
   await page.setRequestInterception(true);
-  page.on('request', (rq) => (/\/api\/clinicflow\/|localhost:8089/.test(rq.url()) ? rq.abort() : rq.continue()));
+  page.on('request', (rq) => (/\/api\/clinicflow\/|localhost:8089|clinicflow-api-staging/.test(rq.url()) ? rq.abort() : rq.continue()));
   await page.goto(`${base}/book?problem=toothache`, { waitUntil: 'load' });
   await wait(3500);
   const r = await walk(page, '3-whatsapp', { reason: null, expectOtp: false, scope: 'main' });
